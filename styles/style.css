@@ -1,0 +1,314 @@
+/* header */
+header {
+    width:100%;
+    
+}
+header .header_wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_wrap h1 {
+    margin: 25px 0 25px 30px;
+}
+header .header_wrap h1 a {}
+header .header_wrap h1 a img {width: 100%;}
+header .header_wrap .nav {
+    
+}
+header .header_wrap .nav #nav_btn {
+    width: 50px; height:50px;
+    border: 2px solid#000;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+header .header_wrap .nav #nav_btn:hover {
+    background-color: #fff;
+} 
+header .header_wrap .nav #nav_btn:active {
+    transform: scale(0.95);
+    background-color: #fd790d;
+}
+header .header_wrap .nav .menu_line01 {
+    background-color: yellow;
+    display: block;
+    width: 20px;
+    border: 1px solid#000;
+    
+}
+header .header_wrap .nav .menu_line02 {
+    display: block;
+    width: 20px;
+    border: 1px solid#000;
+    margin-top: 10px;
+}
+
+/* header - sub */
+header .header_wrap .nav #sub {display: none;}
+header .header_wrap .nav #sub .sub_top {}
+header .header_wrap .nav #sub .sub_top .sub_top_left {}
+header .header_wrap .nav #sub .sub_top .sub_top_left h1 {}
+header .header_wrap .nav #sub .sub_top .sub_top_left h1 a {}
+header .header_wrap .nav #sub .sub_top .sub_top_left h1 a img {}
+header .header_wrap .nav #sub .sub_top .sub_top_right {}
+header .header_wrap .nav #sub .sub_top .sub_top_right a {}
+header .header_wrap .nav #sub .sub_top .sub_top_right a img {}
+header .header_wrap .nav #sub .sub_top .sub_top_right #close {}
+header .header_wrap .nav #sub .sub_top .sub_top_right #close img {}
+header .header_wrap .nav #sub .sub_contents {}
+header .header_wrap .nav #sub .sub_contents ul {}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title a {}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul {}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text {}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text a {}
+header .header_wrap .nav #sub .sub_contents2 {}
+header .header_wrap .nav #sub .sub_contents2 ul {}
+header .header_wrap .nav #sub .sub_contents2 ul li {}
+header .header_wrap .nav #sub .sub_contents2 ul li a {}
+header .header_wrap .nav #sub .sub_contents2 ul li ul {}
+header .header_wrap .nav #sub .sub_contents2 ul li ul li {}
+header .header_wrap .nav #sub .sub_contents2 ul li ul li a {}
+header .header_wrap .nav #sub .sub_recruit {}
+header .header_wrap .nav #sub .sub_recruit a {}
+header .header_wrap .nav #sub .sub_recruit a span {}
+header .header_wrap .nav #sub .sub_recruit a span img {}
+
+header .header_wrap .language {
+    
+    margin-right: 30px;
+}
+header .header_wrap .language #check_btn {display: block;}
+header .header_wrap .language #check_btn .label {}
+header .header_wrap .language #check_btn .label {}
+header .header_wrap .language #check_btn .label a {display: block;}
+header .header_wrap .language #check_btn .label a img {}
+header .header_wrap .language .menubars {display: none;} 
+header .header_wrap .language #check_btn:checked ~ .menubars {
+    display: block;
+    position: absolute;
+    width: 80px;
+    background-color: #fd790d;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+header .header_wrap .language a {}
+header .header_wrap .language a img {
+    
+    margin-left: 25px;
+}
+header .header_wrap .language .menubars {
+    /* position: absolute;
+    width: 80px;
+    background-color: #fd790d;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 10px; */
+    
+}
+
+header .header_wrap .language .menubars li {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+header .header_wrap .language .menubars li a {
+    font-size: 0.71rem;
+    color: #fff;
+    transition: all 1s;
+}
+header .header_wrap .language .menubars li a:hover {
+    color:#000
+}
+
+/* main-page */
+main {}
+main section {}
+main section .main_text {}
+main section .main_text h2 {}
+main section .main_text h2 p {}
+main section .scroll {}
+main section .scroll span {}
+main section .scroll img {}
+main section .play_wrap {}
+main section .play_wrap ul {}
+main section .play_wrap ul li {}
+main section .play_wrap ul li .play {}
+main section .play_wrap ul li .play img {}
+main section .play_wrap ul li .pause {}
+main section .play_wrap ul li .pause img {}
+main section .play_wrap ul li .play_bar01 {}
+main section .play_wrap ul li .play_bar01 span {}
+main section .play_wrap ul li .play_bar01 .bar {}
+main section .play_wrap ul li .play_bar02 {}
+main section .play_wrap ul li .play_bar02 span {}
+main section .play_wrap ul li .play_bar02 .bar {}
+main section #video01 {}
+main section #video02 {}
+
+/* category1 */
+main section .category1 {}
+main section .category1 h2 {}
+main section .category1 .category_contents {}
+main section .category1 .category_contents .text {}
+main section .category1 .category_contents .text .text1 {}
+main section .category1 .category_contents .text .text1 em {}
+main section .category1 .category_contents .text .text1 span {}
+main section .category1 .category_contents .text .text1 img {}
+main section .category1 .category_contents .text .text2 {}
+main section .category1 .category_contents .text .text2 em {}
+main section .category1 .category_contents .text .text2 span {}
+main section .category1 .category_contents .text .text2 img {}
+main section .category1 .category_contents .text .text3 {}
+main section .category1 .category_contents .text .text3 em {}
+main section .category1 .category_contents .text .text3 span {}
+main section .category1 .category_contents .text .text3 img {}
+main section .category1 .category_contents .text .text4 {}
+main section .category1 .category_contents .text .text4 em {}
+main section .category1 .category_contents .text .text4 span {}
+main section .category1 .category_contents .text .text4 img {}
+
+/* aside - snb */
+main section aside {}
+main section aside .snb {}
+main section aside .snb ul {}
+main section aside .snb ul li {}
+main section aside .snb ul li a {}
+main section aside .snb ul li a img {}
+main section aside .snb ul li a span {}
+main section aside .snb ul li .up_btn {}
+main section aside .snb ul li .up_btn img {}
+main section aside .snb ul li .down_btn {}
+main section aside .snb ul li .down_btn img {}
+
+/* category2 */
+main section .category2 {}
+main section .category2 h2 {}
+main section .category2 .category2_contents {}
+main section .category2 .category2_contents .contents01 {}
+main section .category2 .category2_contents .contents01 span {}
+main section .category2 .category2_contents .contents02 {}
+main section .category2 .category2_contents .contents02 span {}
+main section .category2 .category2_contents .contents03 {}
+main section .category2 .category2_contents .contents03 span {}
+main section .category2 .category2_contents .contents04 {}
+main section .category2 .category2_contents .contents04 span {}
+
+/* category3 */
+main section .category3 {}
+main section .category3 .category3_contents {}
+main section .category3 .category3_contents .product {}
+main section .category3 .category3_contents .product h2 {}
+main section .category3 .category3_contents .product span {}
+main section .category3 .category3_contents .product a {}
+main section .category3 .category3_contents .product a span {}
+main section .category3 .category3_contents .product a span img {}
+main section .category3 .category3_contents .product a .line {}
+
+/* swiper - slide */
+main section .category3 .category3_contents .product #product_slide {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .swiper-slide {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide1 {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide1 img {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide2 {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide2 img{}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide3 {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide3 img {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide4 {}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide4 img {}
+main section .category3 .category3_contents .product #product_slide .swiper-scrollbar {}
+
+/* category4 */
+main section .category4 {}
+main section .category4 .notice {}
+main section .category4 .notice .notice_top {}
+main section .category4 .notice .notice_top h3 {}
+main section .category4 .notice .notice_top h3 a {}
+main section .category4 .notice .notice_top a {}
+main section .category4 .notice .notice_top a span {}
+main section .category4 .notice .notice_top a span img {}
+main section .category4 .notice .notice_top a .line {}
+main section .category4 .notice .notice_contents {}
+main section .category4 .notice .notice_contents ul {}
+main section .category4 .notice .notice_contents ul li {}
+main section .category4 .notice .notice_contents ul li a {}
+main section .category4 .notice .notice_contents ul li a p {}
+main section .category4 .notice .notice_contents ul li a span {}
+main section .category4 .notice .notice_contents ul li a em {}
+main section .category4 .notice .notice_contents ul li a .notice_line {}
+main section .category4 .event {}
+main section .category4 .event .event_top {}
+main section .category4 .event .event_top h3 {}
+main section .category4 .event .event_top h3 a {}
+main section .category4 .event .event_top a {}
+main section .category4 .event .event_top a span {}
+main section .category4 .event .event_top a span img {}
+main section .category4 .event .event_top a .line {}
+main section .category4 .event .event_contents {}
+main section .category4 .event .event_contents ul {}
+main section .category4 .event .event_contents ul li {}
+main section .category4 .event .event_contents ul li a {}
+main section .category4 .event .event_contents ul li a img {}
+
+/* category5 */
+main section .category5 {}
+main section .category5 .ir {}
+main section .category5 .ir h3 {}
+main section .category5 .ir .price {}
+main section .category5 .ir .price .ir_price {}
+main section .category5 .ir .price .ir_price p {}
+main section .category5 .ir .price .ir_price span {}
+main section .category5 .ir .price .ir_price span img {}
+main section .category5 .ir .price .sub_price {}
+main section .category5 .ir .price .sub_price ul {}
+main section .category5 .ir .price .sub_price ul li {}
+main section .category5 .ir .price .sub_price ul li span {}
+main section .category5 .ir .price .sub_price ul li em {}
+main section .category5 .ir .ir_navi {}
+main section .category5 .ir .ir_navi a {}
+main section .category5 .ir .ir_navi a span {}
+main section .category5 .ir .ir_navi a span img {}
+main section .category5 .recruit {}
+main section .category5 .recruit h3 {}
+main section .category5 .recruit p {}
+main section .category5 .recruit span {}
+
+/* footer */
+footer {}
+footer .fnb {}
+footer .fnb ul {}
+footer .fnb ul li {}
+footer .fnb ul li a {}
+footer .fnb ul li a h2 {}
+footer .fnb ul li a h2 img {}
+footer .fnb ul li a span {}
+footer .fnb ul li a span img {}
+footer .fnb .under_line {}
+footer .footer_btm {}
+footer .footer_btm address {}
+footer .footer_btm address p {}
+footer .footer_btm address p span {}
+footer .footer_btm .relation {}
+footer .footer_btm .relation ul {}
+footer .footer_btm .relation ul li {}
+footer .footer_btm .relation ul li .sns {}
+footer .footer_btm .relation ul li .sns span {}
+footer .footer_btm .relation ul li .sns span img {}
+footer .footer_btm .relation ul li ul {}
+footer .footer_btm .relation ul li ul li {}
+footer .footer_btm .relation ul li ul li a {}
+footer .footer_btm .relation ul li ul li a img {}
+footer .footer_btm .relation ul li .family {}
+footer .footer_btm .relation ul li .family span {}
+footer .footer_btm .relation ul li .family span img {}
