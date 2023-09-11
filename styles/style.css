@@ -1,7 +1,10 @@
 /* header */
 header {
-    width:100%;
+    width:100%; 
+    margin: 0 auto; left:0; top:0;
     
+    z-index: 200;
+    position: fixed;
 }
 header .header_wrap {
     display: flex;
@@ -19,7 +22,7 @@ header .header_wrap .nav {
 }
 header .header_wrap .nav #nav_btn {
     width: 50px; height:50px;
-    border: 2px solid#000;
+    border: 2px solid#fff;
     border-radius: 50%;
     display: flex;
     flex-flow: column nowrap;
@@ -27,69 +30,199 @@ header .header_wrap .nav #nav_btn {
     align-items: center;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.1s all;
+    transition: 0.5s all;
 }
 header .header_wrap .nav #nav_btn:hover {
-    background-color: #fff;
+    background-color: #fd790d;
+    transition: 0.5s all;
 } 
 header .header_wrap .nav #nav_btn:active {
     transform: scale(0.95);
     background-color: #fd790d;
+    transition: 0.1s all;
+    
 }
 header .header_wrap .nav .menu_line01 {
-    background-color: yellow;
+    
     display: block;
     width: 20px;
-    border: 1px solid#000;
+    border: 1px solid#fff;
     
 }
 header .header_wrap .nav .menu_line02 {
     display: block;
     width: 20px;
-    border: 1px solid#000;
+    border: 1px solid#fff;
     margin-top: 10px;
 }
 
 /* header - sub */
-header .header_wrap .nav #sub {display: none;}
-header .header_wrap .nav #sub .sub_top {}
-header .header_wrap .nav #sub .sub_top .sub_top_left {}
+header .header_wrap .nav #sub {
+    background: url(../images/bg_sub.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left:0; top:0;
+    width: 100%;
+    transition: 0.5s all;
+    
+}
+
+header .header_wrap .nav #sub .sub_top {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+header .header_wrap .nav #sub .sub_top .sub_top_left {
+    
+}
 header .header_wrap .nav #sub .sub_top .sub_top_left h1 {}
 header .header_wrap .nav #sub .sub_top .sub_top_left h1 a {}
-header .header_wrap .nav #sub .sub_top .sub_top_left h1 a img {}
-header .header_wrap .nav #sub .sub_top .sub_top_right {}
-header .header_wrap .nav #sub .sub_top .sub_top_right a {}
+header .header_wrap .nav #sub .sub_top .sub_top_left h1 a img {width: 100%;}
+header .header_wrap .nav #sub .sub_top .sub_top_right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_wrap .nav #sub .sub_top .sub_top_right a {
+    margin-left: 20px;
+}
 header .header_wrap .nav #sub .sub_top .sub_top_right a img {}
 header .header_wrap .nav #sub .sub_top .sub_top_right #close {}
 header .header_wrap .nav #sub .sub_top .sub_top_right #close img {}
 header .header_wrap .nav #sub .sub_contents {}
-header .header_wrap .nav #sub .sub_contents ul {}
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {}
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title a {}
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul {}
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text {}
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text a {}
-header .header_wrap .nav #sub .sub_contents2 {}
-header .header_wrap .nav #sub .sub_contents2 ul {}
-header .header_wrap .nav #sub .sub_contents2 ul li {}
-header .header_wrap .nav #sub .sub_contents2 ul li a {}
-header .header_wrap .nav #sub .sub_contents2 ul li ul {}
-header .header_wrap .nav #sub .sub_contents2 ul li ul li {}
-header .header_wrap .nav #sub .sub_contents2 ul li ul li a {}
-header .header_wrap .nav #sub .sub_recruit {}
-header .header_wrap .nav #sub .sub_recruit a {}
-header .header_wrap .nav #sub .sub_recruit a span {}
-header .header_wrap .nav #sub .sub_recruit a span img {}
+header .header_wrap .nav #sub .sub_contents > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {
+    margin: 60px 50px 90px 144px;
+    transition: all 0.5s;
+    
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title > a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    padding-bottom: 10px;
+    transform-origin:  0% 50%;
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title > a:hover:after {
+    transform: scaleX(1);
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title > a {
+    font-size: 1.41rem; color: #fff; letter-spacing: -0.02rem;
+    display: block; margin-bottom: 20px;
+    transition: all 0.5s;
+    
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul {
+    
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text {
+    
+    
+    
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text a:hover {
+    color: #fd790d;
+}
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text a {
+    color: #fff; letter-spacing: -0.02rem;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 {
+    
+}
+header .header_wrap .nav #sub .sub_contents2 ul {transition: all 0.5s;}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 {
+    margin-bottom: 80px;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 > a:hover:after {
+    transform: scaleX(1);
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 > a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    padding-bottom: 10px;
+    transform-origin:  0% 50%;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 > a {
+    font-size: 1.41rem; color: #fff; letter-spacing: -0.02rem;
+    margin-left: 144px;
+    display: inline-block; margin-bottom: 20px;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: center;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li {
+    margin: 0 50px 0 144px;
+    width: 120px;
+    padding-top: 10px;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a:hover {
+    color: #fd790d;
+}
+header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a {
+    width: 100%;
+    display: block; color:#FFF;
+    transition: all 0.5s;
+}
+header .header_wrap .nav #sub .sub_recruit {
+    width: 195px; height: 40px;
+    position: absolute; 
+    right:20px; bottom:10px;
+    border: 1px solid#fff;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+header .header_wrap .nav #sub .sub_recruit a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+header .header_wrap .nav #sub .sub_recruit a span {
+    color: #fff;
+    display: block;
+    margin-left: 10px;
+}
+header .header_wrap .nav #sub .sub_recruit a span img {
+    margin-left: 30px;
+}
+header .header_wrap .nav #sub .sub_recruit a span img:last-child {}
 
 header .header_wrap .language {
-    
-    margin-right: 30px;
+    margin-right: 50px;
 }
-header .header_wrap .language #check_btn {display: block;}
+header .header_wrap .language #check_btn {display: none;}
+header .header_wrap .language #check_btn
 header .header_wrap .language #check_btn .label {}
-header .header_wrap .language #check_btn .label {}
-header .header_wrap .language #check_btn .label a {display: block;}
-header .header_wrap .language #check_btn .label a img {}
+
+header .header_wrap .language #check_btn .label {display: block;}
+header .header_wrap .language #check_btn .label img {}
 header .header_wrap .language .menubars {display: none;} 
 header .header_wrap .language #check_btn:checked ~ .menubars {
     display: block;
@@ -100,28 +233,28 @@ header .header_wrap .language #check_btn:checked ~ .menubars {
     margin-top: 5px;
     margin-left: 20px;
     border-radius: 10px;
+    transition: all 1s;
 }
-header .header_wrap .language a {}
-header .header_wrap .language a img {
-    
+header .header_wrap .language label img {
     margin-left: 25px;
 }
-header .header_wrap .language .menubars {
-    /* position: absolute;
-    width: 80px;
-    background-color: #fd790d;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 20px;
-    border-radius: 10px; */
-    
+        
+
+header .header_wrap .language label img:last-child {
+    margin-bottom: 5px;
 }
+
+
+header .header_wrap .language .menubars {}
+
+
 
 header .header_wrap .language .menubars li {
     margin-top: 5px;
     margin-bottom: 10px;
     transition: all 1s;
 }
+
 header .header_wrap .language .menubars li a {
     font-size: 0.71rem;
     color: #fff;
@@ -133,31 +266,132 @@ header .header_wrap .language .menubars li a:hover {
 
 /* main-page */
 main {}
-main section {}
-main section .main_text {}
-main section .main_text h2 {}
-main section .main_text h2 p {}
-main section .scroll {}
-main section .scroll span {}
-main section .scroll img {}
-main section .play_wrap {}
-main section .play_wrap ul {}
-main section .play_wrap ul li {}
-main section .play_wrap ul li .play {}
-main section .play_wrap ul li .play img {}
-main section .play_wrap ul li .pause {}
-main section .play_wrap ul li .pause img {}
+main section {
+    
+}
+main section .main_text {
+    width:100%;
+    position: absolute; top:50%;
+    text-align: center;
+    z-index: 100;
+    overflow: hidden;
+}
+main section .main_text h2 {
+    font-size: 3.99rem;
+    font-weight: 600; color:#fff;
+    letter-spacing: -0.02rem;
+    overflow: hidden;
+}
+main section .main_text p {
+    font-size: 1.99rem;
+    color:#fff;
+    letter-spacing: -0.02rem;
+    margin-top: 20px;
+    overflow: hidden;
+}
+main section .scroll {
+    width:100%;
+    position: absolute; bottom:0%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+main section .scroll span {
+    margin-bottom: 20px;
+    color:#fff;
+}
+main section .scroll img {
+    margin-top: 40px;
+    animation:arrow_move 1s linear alternate infinite;
+
+}
+main section .play_wrap {
+    width:100%;
+    position: absolute; bottom:10%;
+    z-index: 100;
+}
+main section .play_wrap ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+
+}
+main section .play_wrap ul li {
+    margin-right: 10px;
+}
+main section .play_wrap ul li .play {
+    transition: all 0.2s linear;
+}
+main section .play_wrap ul li .play img {
+    transition: all 0.2s linear;
+}
+main section .play_wrap ul li .play:hover img {
+    transform: scale(1.2);
+}
+main section .play_wrap ul li .pause {
+    transition: all 0.2s linear;
+}
+main section .play_wrap ul li .pause img {
+    transition: all 0.2s linear;
+}
+main section .play_wrap ul li .pause:hover img {
+    transform: scale(1.1);
+}
 main section .play_wrap ul li .play_bar01 {}
-main section .play_wrap ul li .play_bar01 span {}
-main section .play_wrap ul li .play_bar01 .bar {}
+main section .play_wrap ul li .play_bar01:hover {
+    
+}
+main section .play_wrap ul li .play_bar01 span {
+    display: block; color:#fff;
+    transition: all 0.2s linear;
+}
+main section .play_wrap ul li .play_bar01 span:hover {
+    transform: scale(1.05);
+    color:#fd790d;
+}
+main section .play_wrap ul li .play_bar02 span:hover {
+    transform: scale(1.05);
+    color:#fd790d;
+}
+main section .play_wrap ul li .play_bar01 .bar {
+    width: 150px;
+    border: 3px solid#fff;
+    display: block;
+    margin-top: 10px;
+}
 main section .play_wrap ul li .play_bar02 {}
-main section .play_wrap ul li .play_bar02 span {}
-main section .play_wrap ul li .play_bar02 .bar {}
-main section #video01 {}
-main section #video02 {}
+main section .play_wrap ul li .play_bar02 span {
+    display: block; color:#fff;
+    transition: all 0.2s linear;
+}
+main section .play_wrap ul li .play_bar02 .bar {
+    width: 150px;
+    border: 3px solid#fff;
+    display: block;
+    margin-top: 10px;
+}
+main section #video01 {
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+main section #video02 {
+    position: relative;
+    top: 0;
+    z-index: 10;
+    
+}
 
 /* category1 */
-main section .category1 {}
+main section .category1 {
+    overflow: hidden;
+}
 main section .category1 h2 {}
 main section .category1 .category_contents {}
 main section .category1 .category_contents .text {}
@@ -312,3 +546,9 @@ footer .footer_btm .relation ul li ul li a img {}
 footer .footer_btm .relation ul li .family {}
 footer .footer_btm .relation ul li .family span {}
 footer .footer_btm .relation ul li .family span img {}
+
+
+@keyframes arrow_move {
+    0% {transform: translateY(-20px);}
+    100% {transform: translateY(-50px);}
+}
