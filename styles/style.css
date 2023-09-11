@@ -380,53 +380,217 @@ main section #video01 {
     position: relative;
     top: 0;
     z-index: 10;
+    overflow: hidden;
 }
 main section #video02 {
     position: relative;
     top: 0;
     z-index: 10;
-    
+    overflow: hidden;
 }
 
 /* category1 */
 main section .category1 {
     overflow: hidden;
+    width:calc(100% - 60px);
+    margin: 0 auto;
+    
 }
-main section .category1 h2 {}
-main section .category1 .category_contents {}
-main section .category1 .category_contents .text {}
-main section .category1 .category_contents .text .text1 {}
-main section .category1 .category_contents .text .text1 em {}
-main section .category1 .category_contents .text .text1 span {}
-main section .category1 .category_contents .text .text1 img {}
-main section .category1 .category_contents .text .text2 {}
-main section .category1 .category_contents .text .text2 em {}
-main section .category1 .category_contents .text .text2 span {}
-main section .category1 .category_contents .text .text2 img {}
-main section .category1 .category_contents .text .text3 {}
-main section .category1 .category_contents .text .text3 em {}
-main section .category1 .category_contents .text .text3 span {}
-main section .category1 .category_contents .text .text3 img {}
-main section .category1 .category_contents .text .text4 {}
-main section .category1 .category_contents .text .text4 em {}
-main section .category1 .category_contents .text .text4 span {}
-main section .category1 .category_contents .text .text4 img {}
+main section .category1 h2 {
+    text-align: center;
+    font-size: 3.43rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    margin: 100px 0 55px 0;
+}
+main section .category1 .category1_contents {}
+main section .category1 .category1_contents .text {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+main section .category1 .category1_contents .text1 {
+
+    width: 25%; height: 60vh;
+    background: url(../images/etc_drug_2x.png) no-repeat center;
+    background-size: cover;
+    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    transition: all 0.6s ease;
+}
+main section .category1 .category1_contents .text1:hover {
+    overflow: hidden;
+    transform: scale(1.10);
+    transform-origin: center left;
+    transition: transform 0.6s;
+    width: 30%;
+    
+}
+main section .category1 .category1_contents .text .text1 em:hover {
+    
+}
+main section .category1 .category1_contents .text .text1 em {
+    margin: 350px 0 25px 25px;
+    font-size: 2.87rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    
+}
+main section .category1 .category1_contents .text .text1 span {
+    margin: 0px 0 25px 25px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text1 img {
+    margin-left: 25px;
+    
+}
+main section .category1 .category1_contents .text .text2 {
+    width: 25%; height: 60vh;
+    background: url(../images/otc_drug.jpg) no-repeat center;
+    background-size: cover;
+    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    transition: all 0.6s ease;
+}
+main section .category1 .category1_contents .text2:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    transform-origin: bottom center;
+    transition: transform 0.6s;
+}
+
+main section .category1 .category1_contents .text .text2 em {
+    margin: 350px 0 25px 25px;
+    font-size: 2.87rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text2 span {
+    margin: 0px 0 25px 25px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text2 img {
+    margin-left: 25px;
+}
+main section .category1 .category1_contents .text .text3 {
+    width: 25%; height: 60vh;
+    background: url(../images/quasi_2x.png) no-repeat center;
+    background-size: cover;
+    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    transition: all 0.6s ease;
+}
+main section .category1 .category1_contents .text3:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    transform-origin: bottom center;
+    transition: transform 0.6s;
+
+}
+main section .category1 .category1_contents .text .text3 em {
+    margin: 350px 0 25px 25px;
+    font-size: 2.87rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text3 span {
+    margin: 0px 0 25px 25px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text3 img {
+    margin-left: 25px;
+}
+main section .category1 .category1_contents .text .text4 {
+    width: 25%; height: 60vh;
+    background: url(../images/health_2x.png) no-repeat center;
+    background-size: cover;
+    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    transition: all 0.6s ease;
+}
+main section .category1 .category1_contents .text4:hover {
+    overflow: hidden;
+    transform: scale(1.10);
+    transform-origin: center right;
+    transition: transform 0.6s;
+    width: 30%;
+    
+}
+main section .category1 .category1_contents .text .text4 em {
+    margin: 350px 0 25px 25px;
+    font-size: 2.87rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text4 span {
+    margin: 0px 0 25px 25px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text4 img {
+    margin-left: 25px;
+}
 
 /* aside - snb */
-main section aside {}
-main section aside .snb {}
+main section aside {
+    
+}
+main section aside .snb {
+    position: absolute;
+    
+    right: 0; top:170%;
+    z-index: 999;
+    
+}
 main section aside .snb ul {}
-main section aside .snb ul li {}
-main section aside .snb ul li a {}
+main section aside .snb ul li {margin-top: 30px;}
+main section aside .snb ul li:last-child {margin-top: 0;}
+main section aside .snb ul li a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
 main section aside .snb ul li a img {}
-main section aside .snb ul li a span {}
+main section aside .snb ul li a span {
+    font-size: 0.75rem;
+    letter-spacing: -0.02rem;
+}
 main section aside .snb ul li .up_btn {}
 main section aside .snb ul li .up_btn img {}
 main section aside .snb ul li .down_btn {}
 main section aside .snb ul li .down_btn img {}
 
 /* category2 */
-main section .category2 {}
+main section .category2 {
+    
+}
 main section .category2 h2 {}
 main section .category2 .category2_contents {}
 main section .category2 .category2_contents .contents01 {}
