@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="광동제약">
     <meta name="description" content="광동 60년, 최고를 향한 올바른 고집, 광동제약">
+    <title>::: 광동제약 :::</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     
     <!-- 파비콘 위치 -->
-    <title>::: 광동제약 :::</title>
 </head>
 <body>
     <header>
@@ -246,7 +248,7 @@
         <section>
             <div class="category3">
                 <div class="category3_contents">
-                    <div class="product">
+                    <div class="product"> <!-- 배경이미지 삽입 -->
                         <h2>Product</h2>
                         <span>광동제약의 다양한 제품과 서비스를 소개합니다.</span>
                         <a href="#">
@@ -256,10 +258,11 @@
                         <div class="swiper" id="product_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1"><img src="./images/slide1.png" alt=""></div>
-                                <div class="swiper-slide slide2"><img src="./images/slide2.jpg" alt=""></div>
+                                <div class="swiper-slide slide2"><img src="./images/pro2.png" alt=""></div>
                                 <div class="swiper-slide slide3"><img src="./images/slide3.png" alt=""></div>
-                                <div class="swiper-slide slide3"><img src="./images/slide4_2x.png" alt=""></div>
+                                <div class="swiper-slide slide4"><img src="./images/slide4_2x.png" alt=""></div>
                             </div> <!-- end swiper-wrapper -->
+                            <div class="swiper-pagination"></div>
                             <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
@@ -323,9 +326,9 @@
                     </div>
                     <div class="event_contents">
                         <ul>
-                            <li><a href="#"><img src="./images/bnr_event1.png" alt=""></a></li>
-                            <li><a href="#"><img src="./images/event2.gif" alt=""></a></li>
-                            <li><a href="#"><img src="./images/event3_test.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/bnr1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/bnr2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/bnr3.jpg" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -338,8 +341,10 @@
                     <div class="price">
                         <div class="ir_price">
                             <p>6,250</p>
-                            <span><img src="./images/small_down.png" alt="">50</span>
-                            <span><img src="./images/small_down.png" alt="">1.7%</span>
+                            <div class="minus">
+                                <span><img src="./images/small_down.png" alt="">50</span>
+                                <span><img src="./images/small_down.png" alt="">1.7%</span>
+                            </div>
                         </div>
                         <div class="sub_price">
                             <ul>
@@ -370,9 +375,9 @@
                     <h3>인재채용</h3>
                     <p>광동제약과 미래를 함께 할</p>
                     <span>역량있는 인재를 찾습니다.</span>
-                </div>
-                <div class="ir_navi">
-                    <a href="#"><span>채용 바로가기<img src="./images/white_small_arrow.png" alt=""></span></a>
+                    <div class="ir_navi">
+                        <a href="#"><span>채용 바로가기<img src="./images/white_small_arrow.png" alt=""></span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -394,9 +399,10 @@
             </address>
             <div class="relation">
                 <ul>
-                    <li>
-                        <a href="#"  class="sns"><span>광동제약 SNS<img src="./images/white_small_up.png" alt=""></span></a>
-                        <ul>
+                    <li class="sns">
+                        <span class="sns_btn">광동제약 SNS<img src="./images/white_small_up.png" alt=""></span>
+                        <span class="txt_line"></span>
+                        <ul class="sns_wrap">
                             <li><a href="#"><img src="./images/insta.png" alt=""></a></li>
                             <li><a href="#"><img src="./images/face.png" alt=""></a></li>
                             <li><a href="#"><img src="./images/youtube.png" alt=""></a></li>
@@ -404,9 +410,10 @@
                             <li><a href="#"><img src="./images/kakao.png" alt=""></a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#"  class="family"><span>FAMILY SITE<img src="./images/white_small_up.png" alt=""></span></a>
-                        <ul>
+                    <li class="family">
+                        <span>FAMILY SITE<img src="./images/white_small_up.png" alt=""></span>
+                        <span class="txt_line"></span>
+                        <ul class="family_wrap">
                             <li><a href="#">광동상회</a></li>
                             <li><a href="#">광동한방병원</a></li>
                             <li><a href="#">KD케어몰</a></li>
@@ -419,6 +426,33 @@
         </div>
     </footer>
     <script src="./script/index.js"></script>
+    <script>
+        const product_slide = new Swiper('#product_slide',{
+            
+            loop:true,    // 자연스럽게 한방향으로만
+            direction:'horizontal',
+            //direction:'vertical'   //수직방향
+            //effect:'fade', //제자리 변경 슬라이드효과
+            autoplay:{
+                delay:3000,  // 슬라이드 간격(밀리초) 기본3초 자동재생
+                disableOnInteraction:false,  //버튼 클릭 후 자동재생 유지
+            },   
+            
+            scrollbar : {
+		el : '.swiper-scrollbar',
+		draggable: true,
+	},
+
+	pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
+
+            
+            
+            
+        })
+    </script>
 </body>
    
 </html>

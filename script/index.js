@@ -50,7 +50,17 @@ const nav_btn = document.querySelector('#nav_btn')
             video01.style.display = 'none';
             video02.style.display = 'block'
         })
-        
+        const sns_wrap = document.querySelector('.sns_wrap')
+        const family_wrap = document.querySelector('.family_wrap')
+        const sns = document.querySelector('.sns')
+        const sns_btn = document.querySelector('.sns_btn')
+        const family = document.querySelector('.family')
+        const active = document.querySelectorAll('.family_wrap.active')
+        console.log(sns_wrap, family_wrap, sns, family, sns_btn, active)
+        sns_wrap.style.display = 'none'
+        sns_btn.addEventListener('click',function(){
+            sns_wrap.style.display = 'flex';
+        })
             
             
             
