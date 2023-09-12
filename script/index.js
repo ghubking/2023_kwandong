@@ -79,4 +79,14 @@ const nav_btn = document.querySelector('#nav_btn')
             snb.setAttribute("style", "display: none;");
         }
     });
-    
+        const up_btn = document.querySelector('.up_btn')
+        const down_btn = document.querySelector('.down_btn')
+        console.log(up_btn, down_btn)
+        up_btn.addEventListener('click',function(e){
+            e.preventDefault();
+            window.scrollTo(0,0);
+        })
+        down_btn.addEventListener('click',function(e){
+            e.preventDefault();
+            window.scrollTo(0,document.body.scrollHeight);
+        })
