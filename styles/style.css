@@ -1,3 +1,4 @@
+
 /* header */
 header {
     width:100%; 
@@ -558,34 +559,60 @@ main section .category1 .category1_contents .text .text4 img {
 }
 
 /* aside - snb */
-main section aside {
+main section .category1 .snb {
+    display: none;
     
 }
-main section aside .snb {
+
+main section .category1 .snb ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color:#fff;
+    border: 1px solid#000;
+    border-radius: 10px;
     position: absolute;
-    
-    right: 0; top:170%;
+    right:0; bottom:20%;
     z-index: 999;
+    position: fixed;
+    transition: all 1s;
+}
+main section .category1 .snb ul li {
+    margin-top: 20px;
+    padding-bottom: 10px;
     
 }
-main section aside .snb ul {}
-main section aside .snb ul li {margin-top: 30px;}
-main section aside .snb ul li:last-child {margin-top: 0;}
-main section aside .snb ul li a {
+main section .category1 .snb ul li:last-child {
+    margin-top: 0;
+    
+}
+main section .category1 .snb ul li a:hover {
+    color:#fd790d; font-weight: 700;
+    transition: all 0.5s;
+}
+main section .category1 .snb ul li a:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+main section .category1 .snb ul li a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    transition: all 0.5s;
     
 }
-main section aside .snb ul li a img {}
-main section aside .snb ul li a span {
-    font-size: 0.75rem;
+main section .category1 .snb ul li a img {
+    width: 50%;
+    transition: all 0.5s;}
+main section .category1 .snb ul li a span {
+    font-size: 0.65rem; font-weight: 700;
     letter-spacing: -0.02rem;
+    padding-top: 10px;
 }
-main section aside .snb ul li .up_btn {}
-main section aside .snb ul li .up_btn img {}
-main section aside .snb ul li .down_btn {}
-main section aside .snb ul li .down_btn img {}
+main section .category1 .snb ul li .up_btn {}
+main section .category1 .snb ul li .up_btn img {}
+main section .category1 .snb ul li .down_btn {}
+main section .category1 .snb ul li .down_btn img {}
 
 /* category2 */
 main section .category2 {
@@ -1103,22 +1130,25 @@ footer .footer_btm .relation ul .sns .txt_line {
     display: block;
     width: 140px; border: 1px solid#fff;
 }
-footer .footer_btm .relation ul .sns .sns_wrap.active {
-    display:flex;
-}
-footer .footer_btm .relation ul .sns .sns_wrap {
+footer .footer_btm .relation ul .sns .sns_wrap.active { 
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    
+}
+footer .footer_btm .relation ul .sns .sns_wrap {
+    /* display: flex; flex-flow: row nowrap;
+    justify-content: space-between; */
+    display: none;
+    position: relative;
+    bottom:70px; 
 }
 footer .footer_btm .relation ul .sns .sns_wrap li {
-    margin-right: 10px;
+    margin-right: 5px;
     
 }
 footer .footer_btm .relation ul .sns .sns_wrap li a {
-    position: relative;
-    bottom:70px; 
+    
     text-align: center;
+    transition: all is;
     
     
 }
@@ -1134,12 +1164,12 @@ footer .footer_btm .relation ul .sns .sns_wrap li a:hover img {
 footer .footer_btm .relation ul .family {
 
 }
-footer .footer_btm .relation ul .family span {
+footer .footer_btm .relation ul .family .family_btn {
     color:#fff;
     margin-bottom: 10px;
     display: block;
 }
-footer .footer_btm .relation ul .family span img {
+footer .footer_btm .relation ul .family .family_btn img {
     margin-left: 30px;
 }
 footer .footer_btm .relation ul .family .txt_line {
@@ -1147,20 +1177,28 @@ footer .footer_btm .relation ul .family .txt_line {
     width: 140px; border: 1px solid#fff;
 }
 
+footer .footer_btm .relation ul .family .family_wrap.active {
+    display: flex; flex-flow: column wrap;
+    justify-content: flex-start;
+    background-color: #fd790d;
+    position: relative;
+    bottom:190px;
+    border-radius: 10px;
+}
 footer .footer_btm .relation ul .family .family_wrap {
     display: flex; flex-flow: column wrap;
     justify-content: flex-start;
+    display:none;
     
-
 }
 footer .footer_btm .relation ul .family .family_wrap li:last-child {
     padding-bottom: 10px;
 }
 footer .footer_btm .relation ul .family .family_wrap li {
     padding-top: 10px; 
-    background-color: #fd790d;
-    position: relative;
-    bottom:190px;
+    /* background-color: #fd790d; */
+    /* position: relative;
+    bottom:190px; */
     text-align: center;
 }
 footer .footer_btm .relation ul .family .family_wrap li a:hover {
@@ -1168,7 +1206,7 @@ footer .footer_btm .relation ul .family .family_wrap li a:hover {
     transition: all 1s;
 }
 footer .footer_btm .relation ul .family .family_wrap li a {
-    color:#fff; 
+    color:#fff; font-size: 0.75rem; font-weight: 600;
     transition: all 1s;
 }
 

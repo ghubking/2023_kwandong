@@ -194,8 +194,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <aside>
                 <div class="snb">
                     <ul>
                         <li>
@@ -224,7 +222,9 @@
                         </li>
                     </ul>
                 </div>
-            </aside>
+            </div>
+            
+        
         </section>
         <section>
             <div class="category2">
@@ -411,7 +411,7 @@
                         </ul>
                     </li>
                     <li class="family">
-                        <span>FAMILY SITE<img src="./images/white_small_up.png" alt=""></span>
+                        <span class="family_btn">FAMILY SITE<img src="./images/white_small_up.png" alt=""></span>
                         <span class="txt_line"></span>
                         <ul class="family_wrap">
                             <li><a href="#">광동상회</a></li>
@@ -425,6 +425,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./script/index.js"></script>
     <script>
         const product_slide = new Swiper('#product_slide',{
@@ -437,7 +438,7 @@
                 delay:3000,  // 슬라이드 간격(밀리초) 기본3초 자동재생
                 disableOnInteraction:false,  //버튼 클릭 후 자동재생 유지
             },   
-            
+            speed:800,
             scrollbar : {
 		el : '.swiper-scrollbar',
 		draggable: true,

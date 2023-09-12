@@ -1,13 +1,15 @@
+
 const nav_btn = document.querySelector('#nav_btn')
         const sub = document.querySelector('#sub')
         const close = document.querySelector('#close')
         const header = document.querySelector('header')
         const headerHeight = header.getBoundingClientRect().height;
         console.log(nav_btn, sub, close, header)
+        
         sub.style.transform = 'translateY(-100%)'
         sub.style.transtion = 'transform 1s ease'
         nav_btn.addEventListener('click',function(){
-            sub.style.transform = 'translateY(0)'
+        sub.style.transform = 'translateY(0)'
         })
         close.addEventListener('click',function(){
             sub.style.transform = 'translateY(-100%)'
@@ -19,6 +21,7 @@ const nav_btn = document.querySelector('#nav_btn')
             header.setAttribute("style", "background: transparent;");
         }
     });
+    
     
         const video01 = document.querySelector('#video01')
         const video02 = document.querySelector('#video02')
@@ -54,16 +57,26 @@ const nav_btn = document.querySelector('#nav_btn')
         const family_wrap = document.querySelector('.family_wrap')
         const sns = document.querySelector('.sns')
         const sns_btn = document.querySelector('.sns_btn')
+        const family_btn = document.querySelector('.family_btn')
         const family = document.querySelector('.family')
-        const active = document.querySelectorAll('.family_wrap.active')
+        const active = document.querySelectorAll('.active')
         console.log(sns_wrap, family_wrap, sns, family, sns_btn, active)
-        sns_wrap.style.display = 'none'
+        // sns_wrap.style.display = 'none'
         sns_btn.addEventListener('click',function(){
-            sns_wrap.style.display = 'flex';
+            sns_wrap.classList.toggle('active')
         })
-            
-            
-            
+        family_btn.addEventListener('click',function(){
+            family_wrap.classList.toggle('active')
+        })
         
-        
-        
+        const snb = document.querySelector('.snb')
+        // const category1 = document.querySelector('.category1')
+        console.log(snb)
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > '900') {
+            snb.setAttribute("style", "display: flex");
+        } else {
+            snb.setAttribute("style", "display: none;");
+        }
+    });
+    
