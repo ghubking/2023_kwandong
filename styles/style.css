@@ -65,9 +65,10 @@ header .header_wrap .nav #sub {
     background-size: cover;
     position: absolute;
     left:0; top:0;
-    width: 100%;
+    width: 100%; height:100vh;
+    transform: translateY(-100%);
     transition: 0.5s all;
-    
+    overflow-y: auto;
 }
 
 header .header_wrap .nav #sub .sub_top {
@@ -102,6 +103,7 @@ header .header_wrap .nav #sub .sub_contents > ul {
     flex-flow: row nowrap;
     
     
+    
 }
 header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {
     margin: 60px 50px 90px 144px;
@@ -126,20 +128,20 @@ header .header_wrap .nav #sub .sub_contents ul .sub_contents_title > a {
     transition: all 0.5s;
     
 }
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul {
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list {
     
 }
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text {
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list .sub_contents_text {
     
     
     
 }
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text a:hover {
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list .sub_contents_text a:hover {
     color: #fd790d;
 }
-header .header_wrap .nav #sub .sub_contents ul .sub_contents_title ul .sub_contents_text a {
+header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list .sub_contents_text a {
     color: #fff; letter-spacing: -0.02rem;
-    display: block;
+    display: block; 
     margin-top: 10px;
     transition: all 0.5s;
 }
@@ -196,7 +198,7 @@ header .header_wrap .nav #sub .sub_recruit {
     width: 195px; height: 40px;
     position: absolute; 
     right:20px; bottom:10px;
-    border: 1px solid#fff;
+    /* border: 1px solid#fff; */
     background-color: #000;
     margin-bottom: 20px;
 }
@@ -207,10 +209,15 @@ header .header_wrap .nav #sub .sub_recruit a {
     align-items: center;
     margin-top: 10px;
 }
+header .header_wrap .nav #sub .sub_recruit a span:hover {
+    color:#fd790d;
+    transition: all 0.5s;
+}
 header .header_wrap .nav #sub .sub_recruit a span {
     color: #fff;
     display: block;
     margin-left: 10px;
+    transition: all 0.5s;
 }
 header .header_wrap .nav #sub .sub_recruit a span img {
     margin-left: 30px;
@@ -575,24 +582,24 @@ main section .category1 .snb ul {
     border-radius: 10px;
     position: absolute;
     right:0; bottom:20%;
-    z-index: 999;
+    z-index: 200;
     position: fixed;
     transition: all 1s;
 }
 main section .category1 .snb ul li {
     margin-top: 20px;
     padding-bottom: 10px;
-    
+    padding:10px 10px;
 }
 main section .category1 .snb ul li:last-child {
     margin-top: 0;
-    
+    padding-top: 0;
 }
 main section .category1 .snb ul li a:hover {
     color:#fd790d; font-weight: 700;
     transition: all 0.5s;
 }
-main section .category1 .snb ul li a:hover img {
+main section .category1 .snb ul li > a:hover img {
     transform: scale(1.1);
     transition: all 0.5s;
 }
@@ -611,10 +618,15 @@ main section .category1 .snb ul li a span {
     letter-spacing: -0.02rem;
     padding-top: 10px;
 }
+
 main section .category1 .snb ul li .up_btn {}
-main section .category1 .snb ul li .up_btn img {}
+main section .category1 .snb ul li .up_btn img {
+    
+}
 main section .category1 .snb ul li .down_btn {}
-main section .category1 .snb ul li .down_btn img {}
+main section .category1 .snb ul li .down_btn img {
+    margin-bottom: 20px;
+}
 
 /* category2 */
 main section .category2 {
@@ -814,14 +826,24 @@ main section .category4 .notice .notice_top {
 }
 main section .category4 .notice .notice_top h3 {
     margin-bottom: 85px;
+    
+}
+main section .category4 .notice .notice_top h3 a:hover {
+    color:#fd790d;
+    transition: all 0.5s;
 }
 main section .category4 .notice .notice_top h3 a {
     font-size: 1.99rem; font-weight: 600;
     letter-spacing: -0.02rem;
-    
+    transition: all 0.5s;
+}
+main section .category4 .notice .notice_top a:hover {
+    color:#fd790d;
+    transition: all 0.5s;
 }
 main section .category4 .notice .notice_top a {
     margin-bottom: 85px;
+    transition: all 0.5s;
 }
 main section .category4 .notice .notice_top a span {
     font-weight: 500; letter-spacing: -0.02rem;
@@ -839,9 +861,18 @@ main section .category4 .notice .notice_contents {
     
 }
 main section .category4 .notice .notice_contents ul {}
-main section .category4 .notice .notice_contents ul li {}
+main section .category4 .notice .notice_contents ul li {
+    
+}
+main section .category4 .notice .notice_contents ul li a:hover {
+    color: #fd790d;
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
 main section .category4 .notice .notice_contents ul li a {
     display: flex; flex-flow: column nowrap;
+    transition: all 0.5s;
+    overflow: hidden;
 }
 main section .category4 .notice .notice_contents ul li a p {
     font-size: 1.41rem; font-weight: 600; letter-spacing: -0.02rem;
@@ -871,12 +902,22 @@ main section .category4 .event .event_top {
 main section .category4 .event .event_top h3 {
     margin-bottom: 85px;
 }
+main section .category4 .event .event_top h3 a:hover {
+    color:#fd790d;
+    transition: all 0.5s;
+}
 main section .category4 .event .event_top h3 a {
     font-size: 1.99rem; font-weight: 600;
     letter-spacing: -0.02rem;
+    transition: all 0.5s;
+}
+main section .category4 .event .event_top a:hover {
+    color:#fd790d;
+    transition: all 0.5s;
 }
 main section .category4 .event .event_top a {
     margin-bottom: 85px;
+    transition: all 0.5s;
 }
 main section .category4 .event .event_top a span {
     font-weight: 500; letter-spacing: -0.02rem;
@@ -958,15 +999,17 @@ main section .category5 .ir .price .ir_price .minus {
     text-align: end;
     
 }
+main section .category5 .ir .price .ir_price .minus span:last-child {margin-right: 10px;}
 main section .category5 .ir .price .ir_price .minus span {
     font-size: 1.41rem; font-weight: 700;
     letter-spacing: -0.02rem;
     color:#F59348; line-height: 29px;
-    margin-right: 10px;
+    margin-right: 0px;
     
 }
-main section .category5 .ir .price .ir_price .minus span img {
+main section .category5 .ir .price .ir_price .minus img {
     margin-right: 10px;
+    margin-left: 10px;
 }
 main section .category5 .ir .price .sub_price {
     width: 35%; margin-right: 70px;

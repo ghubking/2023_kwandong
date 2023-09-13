@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    
+    <link rel="stylesheet" href="./styles/responsive.css">
     <!-- 파비콘 위치 -->
 </head>
 <body>
@@ -36,7 +36,7 @@
                         <ul>
                             <li class="sub_contents_title">
                                 <a href="#">회사소개</a>
-                                <ul>
+                                <ul class="text_list">
                                     <li class="sub_contents_text"><a href="#">CEO 소개</a></li>
                                     <li class="sub_contents_text"><a href="#">가산 최수부 선대회장</a></li>
                                     <li class="sub_contents_text"><a href="#">연혁</a></li>
@@ -50,7 +50,7 @@
                             </li>
                             <li class="sub_contents_title">
                                 <a href="#">연구개발</a>
-                                <ul>
+                                <ul class="text_list">
                                     <li class="sub_contents_text"><a href="#">연구개발 비젼</a></li>
                                     <li class="sub_contents_text"><a href="#">연구소 소개</a></li>
                                     <li class="sub_contents_text"><a href="#">연구 조직</a></li>
@@ -60,7 +60,7 @@
                             </li>
                             <li class="sub_contents_title">
                                 <a href="#">투자정보</a>
-                                <ul>
+                                <ul class="text_list">
                                     <li class="sub_contents_text"><a href="#">재무정보</a></li>
                                     <li class="sub_contents_text"><a href="#">공시정보</a></li>
                                     <li class="sub_contents_text"><a href="#">공고</a></li>
@@ -68,7 +68,7 @@
                             </li>
                             <li class="sub_contents_title">
                                 <a href="#">사회공헌</a>
-                                <ul>
+                                <ul class="text_list">
                                     <li class="sub_contents_text"><a href="#">매칭그랜트</a></li>
                                     <li class="sub_contents_text"><a href="#">가산문화재단</a></li>
                                     <li class="sub_contents_text"><a href="#">어린이 건강지원</a></li>
@@ -215,10 +215,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="up_btn"><img src="./images/large_up2.png" alt=""></a>
+                            <a href="#" class="up_btn"><img src="./images/large_up.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="#" class="down_btn"><img src="./images/large_down2.png" alt=""></a>
+                            <a href="#" class="down_btn"><img src="./images/large_down.png" alt=""></a>
                         </li>
                     </ul>
                 </div>
@@ -340,29 +340,29 @@
                     <h3>IR</h3>
                     <div class="price">
                         <div class="ir_price">
-                            <p>6,250</p>
+                            <p class="count-num" data-count="6250">0</p>
                             <div class="minus">
-                                <span><img src="./images/small_down.png" alt="">50</span>
-                                <span><img src="./images/small_down.png" alt="">1.7%</span>
+                                <img src="./images/small_down.png" alt=""><span class="count-num" data-count="50">0</span>
+                                <img src="./images/small_down.png" alt=""><span class="count-num" data-count="1.7">0</span><span>%</span>
                             </div>
                         </div>
                         <div class="sub_price">
                             <ul>
                                 <li>
                                     <span>시가(원)</span>
-                                    <em>6,250</em>
+                                    <em class="count-num" data-count="6250">0</em>
                                 </li>
                                 <li>
                                     <span>거래량(주)</span>
-                                    <em>5,135</em>
+                                    <em class="count-num" data-count="5135">0</em>
                                 </li>
                                 <li>
                                     <span>고가(원)</span>
-                                    <em>6,520</em>
+                                    <em class="count-num" data-count="6520">0</em>
                                 </li>
                                 <li>
                                     <span>저가(원)</span>
-                                    <em>6,020</em>
+                                    <em class="count-num" data-count="6020">0</em>
                                 </li>
                             </ul>
                         </div>
