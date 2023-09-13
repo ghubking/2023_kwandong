@@ -387,12 +387,14 @@ main section .play_wrap ul li .play_bar02 .bar {
     margin-top: 10px;
 }
 main section #video01 {
+   
     position: relative;
     top: 0;
     z-index: 10;
     overflow: hidden;
 }
 main section #video02 {
+    
     position: relative;
     top: 0;
     z-index: 10;

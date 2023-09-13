@@ -74,11 +74,28 @@ const nav_btn = document.querySelector('#nav_btn')
         })
         
         // 모바일 서브메뉴 토글
-        const text_list = document.querySelectorAll('.text_list')
-        const ul = document.querySelectorAll('.sub_contents_title2>ul')
-        const active2 = document.querySelectorAll('.text_list.active2')
-        const active3 = document.querySelectorAll('ul.active3')
-        console.log(text_list, ul, active2, active3)
+        const btn = document.querySelectorAll('.sub_contents_title')
+        const list = document.querySelectorAll('.text_list')
+        const tab = document.querySelectorAll('.sub_contents_title2')
+        const see = document.querySelectorAll('.sub_contents_title2>ul')
+        console.log(btn, list, tab, see)
+        for (let i=0; i < btn.length; i++) {
+            btn[i].addEventListener('click', ()=> {
+                list[i].classList.toggle('active');
+            });
+        }
+        for (let i=0; i < tab.length; i++) {
+            tab[i].addEventListener('click', ()=> {
+                see[i].classList.toggle('active');
+            });
+        }
+        // btn.forEach(btn => { 
+            //     btn.addEventListener ("click", function() {
+        //         list.forEach(function(list){
+        //         list.classList.toggle('active')
+        //     });
+        // })
+        // })
         
         // 스크롤 내리면 snb 고정메뉴 불러오기
         const snb = document.querySelector('.snb')

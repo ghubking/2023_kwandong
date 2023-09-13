@@ -20,7 +20,7 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li {
 /* 1504px end */
 
 
-@media screen and (max-width:1032px){
+@media screen and (max-width:1100px){
     header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {
         margin: 60px 20px 90px 50px;
         transition: all 0.5s;
@@ -91,8 +91,10 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a {
         
         
     }
-    header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list.active2 {
+
+    header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list.active {
         display: block;
+        
     }
     header .header_wrap .nav #sub .sub_contents ul .sub_contents_title .text_list {
         width: 100%;
@@ -124,7 +126,7 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a {
         display: block; margin: 20px 0 0px 0;
         transition: all 0.5s;
     }
-    header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul.active3 {
+    header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul.active {
         display:flex;
     }
     header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul {
@@ -180,4 +182,5 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a {
     header .header_wrap .nav #sub .sub_recruit a span img {
         margin-left: 12px;
     }
+    
 }
