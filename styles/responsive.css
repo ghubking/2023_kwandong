@@ -99,6 +99,21 @@ main section .category1 .category1_contents .text .text4 span {
 main section .category1 .category1_contents .text .text4 img {
     width: 30px; height: 30px;
 }
+main section .category3 .category3_contents .product {
+    width: 100%; height:75vh;
+}
+main section .category4 .notice .notice_contents ul li a {
+    height:16vh;
+}
+main section .category4 .notice .notice_contents ul li a p {
+    font-size: 1rem;
+}
+main section .category4 .notice .notice_contents ul li a span {
+    font-size: 0.85rem;
+}
+main section .category4 .event .event_contents ul li a img {
+    height:18vh;
+}
 }
 /* 1504px end */
 
@@ -287,8 +302,33 @@ main section .category3 .category3_contents .product h2 {
     font-size: 1.99rem;
 }
 main section .category3 .category3_contents .product {
-    width: 100%; height:70vh;
-    
+    width: 100%; height:65vh;
+}
+main section .category4 {
+    height:80vh;
+}
+main section .category4 .notice {
+    width: 50%; height:80vh;
+}
+main section .category4 .event {
+    width: 50%; height:80vh;
+}
+main section .category4 .notice .notice_contents ul li a {
+    height:12vh;
+}
+main section .category4 .notice .notice_contents ul li a p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+main section .category4 .notice .notice_contents ul li a span {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+main section .category4 .notice .notice_contents ul li a .notice_line {
+    margin-bottom: 10px;
+}
+main section .category4 .event .event_contents ul li a img {
+    height:14vh;
 }
 }
 /* 1100 end */
@@ -544,6 +584,7 @@ html {min-width: 470px;}
         font-size: 1.99rem;
         margin: 50px 0 30px 0;
     }
+    
     main section .category1 .category1_contents .text {
     
         display: flex;
@@ -562,7 +603,7 @@ html {min-width: 470px;}
         transform: scale(1.1);
         transform-origin: bottom center;
         transition: transform 0.6s;
-        width: 50%;
+        width: calc(50% - 15px);
     }
     main section .category1 .category1_contents .text .text1 em {
         margin: 230px 0 10px 15px;
@@ -570,14 +611,14 @@ html {min-width: 470px;}
         font-weight: 700;
         letter-spacing: -0.02rem;
         color: #fff;
-        
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text1 span {
         margin: 0px 0 10px 15px;
     }
     main section .category1 .category1_contents .text .text1 img {
         margin-left: 15px;
-        
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text2 {
 
@@ -589,7 +630,7 @@ html {min-width: 470px;}
         transform: scale(1.1);
         transform-origin: bottom center;
         transition: transform 0.6s;
-        width: 50%;
+        width: calc(50% - 15px);
     }
     main section .category1 .category1_contents .text .text2 em {
         margin: 230px 0 10px 15px;
@@ -597,14 +638,16 @@ html {min-width: 470px;}
         font-weight: 700;
         letter-spacing: -0.02rem;
         color: #fff;
+        overflow: hidden;
         
     }
     main section .category1 .category1_contents .text .text2 span {
         margin: 0px 0 10px 15px;
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text2 img {
         margin-left: 15px;
-        
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text3 {
 
@@ -616,7 +659,7 @@ html {min-width: 470px;}
         transform: scale(1.1);
         transform-origin: bottom center;
         transition: transform 0.6s;
-        width: 50%;
+        width: calc(50% - 15px);
     }
     main section .category1 .category1_contents .text .text3 em {
         margin: 230px 0 10px 15px;
@@ -624,26 +667,30 @@ html {min-width: 470px;}
         font-weight: 700;
         letter-spacing: -0.02rem;
         color: #fff;
-        
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text3 span {
         margin: 0px 0 10px 15px;
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text3 img {
         margin-left: 15px;
-        
+        overflow: hidden;
     }
     main section .category1 .category1_contents .text .text4 {
 
         width: 50%; height: 35vh;
         overflow: hidden;
+        
     }
     main section .category1 .category1_contents .text .text4:hover {
         overflow: hidden;
         transform: scale(1.1);
         transform-origin: bottom center;
         transition: transform 0.6s;
-        width: 50%;
+        width: calc(50% - 15px);
+        
+        
     }
     main section .category1 .category1_contents .text .text4 em {
         margin: 230px 0 10px 15px;
@@ -694,14 +741,68 @@ html {min-width: 470px;}
     font-size: 1.99rem;
     padding: 120px 0 0 20px;
 }
+
 main section .category3 .category3_contents .product h2 {
     font-size: 1.41rem;
+    padding: 50px 0 10px 10px;
 }
 main section .category3 .category3_contents .product span {
     font-size: 1rem;
+    margin: 10px 0 30px 10px;
 }
 main section .category3 .category3_contents .product {
     width: 100%; height:50vh;
-    
+}
+main section .category3 .category3_contents .product a {
+    margin-left: 0px;
+}
+main section .category3 .category3_contents .product a .line {
+    margin: 10px 0 50px 10px;
+}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide1 img {
+    width:70%; height:70%;
+}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide2 img {
+    width:40%; height:60%;
+}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide3 img {
+    width:70%; height:70%;
+}
+main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide4 img {
+    width:70%; height:70%;
+}
+
+main section .category4 {
+    width: calc(100% - 30px); height:160vh;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 30px;
+    margin-right: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+main section .category4 .notice {
+    width: 100%; height:70vh;
+    background: #FDF7F7;
+    padding: 40px 25px 0 15px;
+    margin-right: 20px; 
+}
+main section .category4 .notice .notice_top h3 {
+    margin-top: 0px;
+    font-size: 1.44rem;
+}
+main section .category4 .notice .notice_top h3 > a {
+    font-size: 1.44rem;
+    margin-top: 0;
+}
+main section .category4 .notice .notice_top > a {
+    margin-top: 0px;
+}
+main section .category4 .event {
+    width: 100%; height:70vh;
+    background: #FDF7F7;
+    padding: 40px 25px 0 15px;
+    margin-right: 20px; margin-top: 30px;
 }
 }
