@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <!-- 파비콘 위치 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -135,36 +137,38 @@
     </header>
     <main>
         <section>
-            <div class="main_text">
-                <h2>광동제약</h2>
-                <p>광동 60년, 최고를 향한 올바른 고집</p>
+            <div class="main_page">
+                <div class="main_text">
+                    <h2>광동제약</h2>
+                    <p>광동 60년, 최고를 향한 올바른 고집</p>
+                </div>
+                <div class="scroll">
+                    <span>Scroll down</span>
+                    <img src="./images/white_scrolldown.png" alt="">
+                </div>
+                <div class="play_wrap">
+                    <ul>
+                        <li>
+                            <a href="#" class="play"><img src="./images/play.png" alt=""></a>
+                            <a href="#" class="pause"><img src="./images/pause.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#" class="play_bar01">
+                                <span>Vita 500</span>
+                                <span class="bar"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class=play_bar02>
+                                <span>옥수수수염차</span>
+                                <span class="bar"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <video src="./video/vita.mp4" id="video01" autoplay muted loop></video>
+                <video src="./video/oksusu.mp4" id="video02" autoplay muted loop></video>
             </div>
-            <div class="scroll">
-                <span>Scroll down</span>
-                <img src="./images/white_scrolldown.png" alt="">
-            </div>
-            <div class="play_wrap">
-                <ul>
-                    <li>
-                        <a href="#" class="play"><img src="./images/play.png" alt=""></a>
-                        <a href="#" class="pause"><img src="./images/pause.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#" class="play_bar01">
-                            <span>Vita 500</span>
-                            <span class="bar"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class=play_bar02>
-                            <span>옥수수수염차</span>
-                            <span class="bar"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <video src="./video/vita.mp4" id="video01" autoplay muted loop></video>
-            <video src="./video/oksusu.mp4" id="video02" autoplay muted loop></video>
         </section>
         <section>
             <div class="category1">
@@ -257,8 +261,8 @@
                         </a>
                         <div class="swiper" id="product_slide">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide slide1"><img src="./images/slide1.png" alt=""></div>
-                                <div class="swiper-slide slide2"><img src="./images/pro2.png" alt=""></div>
+                                <div class="swiper-slide slide1"><img src="./images/slide1.jpg" alt=""></div>
+                                <div class="swiper-slide slide2"><img src="./images/pro2_2x.png" alt=""></div>
                                 <div class="swiper-slide slide3"><img src="./images/slide3.png" alt=""></div>
                                 <div class="swiper-slide slide4"><img src="./images/slide4_2x.png" alt=""></div>
                             </div> <!-- end swiper-wrapper -->
@@ -432,8 +436,8 @@
             
             loop:true,    // 자연스럽게 한방향으로만
             direction:'horizontal',
-            //direction:'vertical'   //수직방향
-            //effect:'fade', //제자리 변경 슬라이드효과
+            // direction:'vertical'   //수직방향
+            // effect:'fade', //제자리 변경 슬라이드효과
             autoplay:{
                 delay:3000,  // 슬라이드 간격(밀리초) 기본3초 자동재생
                 disableOnInteraction:false,  //버튼 클릭 후 자동재생 유지

@@ -279,27 +279,30 @@ main {}
 main section {
     
 }
-main section .main_text {
+main section .main_page {
+    
+}
+main section .main_page .main_text {
     width:100%;
     position: absolute; top:50%;
     text-align: center;
     z-index: 100;
     overflow: hidden;
 }
-main section .main_text h2 {
+main section .main_page .main_text h2 {
     font-size: 3.99rem;
     font-weight: 600; color:#fff;
     letter-spacing: -0.02rem;
     overflow: hidden;
 }
-main section .main_text p {
+main section .main_page .main_text p {
     font-size: 1.99rem;
     color:#fff;
     letter-spacing: -0.02rem;
     margin-top: 20px;
     overflow: hidden;
 }
-main section .scroll {
+main section .main_page .scroll {
     width:100%;
     position: absolute; bottom:0%;
     text-align: center;
@@ -310,21 +313,21 @@ main section .scroll {
     z-index: 100;
     overflow: hidden;
 }
-main section .scroll span {
+main section .main_page .scroll span {
     margin-bottom: 20px;
     color:#fff;
 }
-main section .scroll img {
+main section .main_page .scroll img {
     margin-top: 40px;
     animation:arrow_move 1s linear alternate infinite;
 
 }
-main section .play_wrap {
+main section .main_page .play_wrap {
     width:100%;
     position: absolute; bottom:10%;
     z-index: 100;
 }
-main section .play_wrap ul {
+main section .main_page .play_wrap ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -332,69 +335,69 @@ main section .play_wrap ul {
     margin-right: 100px;
 
 }
-main section .play_wrap ul li {
+main section .main_page .play_wrap ul li {
     margin-right: 10px;
 }
-main section .play_wrap ul li .play {
+main section .main_page .play_wrap ul li .play {
     transition: all 0.2s linear;
 }
-main section .play_wrap ul li .play img {
+main section .main_page .play_wrap ul li .play img {
     transition: all 0.2s linear;
 }
-main section .play_wrap ul li .play:hover img {
+main section .main_page .play_wrap ul li .play:hover img {
     transform: scale(1.2);
 }
-main section .play_wrap ul li .pause {
+main section .main_page .play_wrap ul li .pause {
     transition: all 0.2s linear;
 }
-main section .play_wrap ul li .pause img {
+main section .main_page .play_wrap ul li .pause img {
     transition: all 0.2s linear;
 }
-main section .play_wrap ul li .pause:hover img {
+main section .main_page .play_wrap ul li .pause:hover img {
     transform: scale(1.1);
 }
-main section .play_wrap ul li .play_bar01 {}
-main section .play_wrap ul li .play_bar01:hover {
+main section .main_page .play_wrap ul li .play_bar01 {}
+main section .main_page .play_wrap ul li .play_bar01:hover {
     
 }
-main section .play_wrap ul li .play_bar01 span {
+main section .main_page .play_wrap ul li .play_bar01 span {
     display: block; color:#fff;
     transition: all 0.2s linear;
 }
-main section .play_wrap ul li .play_bar01 span:hover {
+main section .main_page .play_wrap ul li .play_bar01 span:hover {
     transform: scale(1.05);
     color:#fd790d;
 }
-main section .play_wrap ul li .play_bar02 span:hover {
+main section .main_page .play_wrap ul li .play_bar02 span:hover {
     transform: scale(1.05);
     color:#fd790d;
 }
-main section .play_wrap ul li .play_bar01 .bar {
+main section .main_page .play_wrap ul li .play_bar01 .bar {
     width: 150px;
     border: 3px solid#fff;
     display: block;
     margin-top: 10px;
 }
-main section .play_wrap ul li .play_bar02 {}
+main section .main_page .play_wrap ul li .play_bar02 {}
 main section .play_wrap ul li .play_bar02 span {
     display: block; color:#fff;
     transition: all 0.2s linear;
 }
-main section .play_wrap ul li .play_bar02 .bar {
+main section .main_page .play_wrap ul li .play_bar02 .bar {
     width: 150px;
     border: 3px solid#fff;
     display: block;
     margin-top: 10px;
 }
-main section #video01 {
-   
+main section .main_page #video01 {
+    width:100%; height:auto;
     position: relative;
     top: 0;
     z-index: 10;
     overflow: hidden;
 }
-main section #video02 {
-    
+main section .main_page #video02 {
+    width:100%; height:auto;
     position: relative;
     top: 0;
     z-index: 10;
@@ -424,7 +427,7 @@ main section .category1 .category1_contents .text {
     width: 100%;
     overflow: hidden;
 }
-main section .category1 .category1_contents .text1 {
+main section .category1 .category1_contents .text .text1 {
 
     width: 25%; height: 60vh;
     background: url(../images/etc_drug_2x.png) no-repeat center;
@@ -435,7 +438,7 @@ main section .category1 .category1_contents .text1 {
     align-items: flex-start;
     transition: all 0.6s ease;
 }
-main section .category1 .category1_contents .text1:hover {
+main section .category1 .category1_contents .text .text1:hover {
     overflow: hidden;
     transform: scale(1.10);
     transform-origin: center left;
@@ -475,7 +478,7 @@ main section .category1 .category1_contents .text .text2 {
     align-items: flex-start;
     transition: all 0.6s ease;
 }
-main section .category1 .category1_contents .text2:hover {
+main section .category1 .category1_contents .text .text2:hover {
     overflow: hidden;
     transform: scale(1.1);
     transform-origin: bottom center;
@@ -509,7 +512,7 @@ main section .category1 .category1_contents .text .text3 {
     align-items: flex-start;
     transition: all 0.6s ease;
 }
-main section .category1 .category1_contents .text3:hover {
+main section .category1 .category1_contents .text .text3:hover {
     overflow: hidden;
     transform: scale(1.1);
     transform-origin: bottom center;
@@ -543,7 +546,7 @@ main section .category1 .category1_contents .text .text4 {
     align-items: flex-start;
     transition: all 0.6s ease;
 }
-main section .category1 .category1_contents .text4:hover {
+main section .category1 .category1_contents .text .text4:hover {
     overflow: hidden;
     transform: scale(1.10);
     transform-origin: center right;
@@ -644,9 +647,10 @@ main section .category2 h2 {
     margin: 100px 0 55px 0;
 }
 main section .category2 .category2_contents {
-    width:calc(100% - 60px);
+    width:100%;
     margin: 0 auto;
     display: flex; flex-flow: row wrap;
+    justify-content: center;
     overflow: hidden;
     
 }
@@ -656,11 +660,11 @@ main section .category2 .category2_contents .contents01:hover {
     overflow: hidden;
 }
 main section .category2 .category2_contents .contents01 {
-    width: 49.4%; height:30vh;
+    width:calc(50% - 30px) ; height:30vh;
     background: url(../images/safety.jpg) no-repeat center;
     background-size: cover;
-    display: block; margin-right: 20px;
-    overflow: hidden;
+    display: block; 
+    overflow: hidden; margin-right: 20px;
     transition: all 0.5s ease;
 }
 main section .category2 .category2_contents .contents01 span {
@@ -676,7 +680,7 @@ main section .category2 .category2_contents .contents02:hover {
     overflow: hidden;
 }
 main section .category2 .category2_contents .contents02 {
-    width: 49.4%; height:30vh;
+    width:calc(50% - 30px) ; height:30vh;
     background: url(../images/rnd.jpg) no-repeat center;
     background-size: cover;
     display: block;
@@ -694,7 +698,7 @@ main section .category2 .category2_contents .contents03:hover {
     overflow: hidden;
 }
 main section .category2 .category2_contents .contents03 {
-    width: 49.4%; height:30vh;
+    width:calc(50% - 30px) ; height:30vh;
     background: url(../images/law.jpg) no-repeat center;
     background-size: cover;
     display: block; 
@@ -704,7 +708,7 @@ main section .category2 .category2_contents .contents03 {
 main section .category2 .category2_contents .contents03 span {
     font-size: 2.82rem; font-weight: 700;
     letter-spacing: 700; color:#fff;
-    display: block; 
+    display: block;
     padding: 180px 0 0 50px;
 }
 main section .category2 .category2_contents .contents04:hover {
@@ -713,7 +717,7 @@ main section .category2 .category2_contents .contents04:hover {
     overflow: hidden;
 }
 main section .category2 .category2_contents .contents04 {
-    width: 49.4%; height:30vh;
+    width: calc(50% - 30px); height:30vh;
     background: url(../images/social.jpg) no-repeat center;
     background-size: cover;
     display: block; margin-top: 20px;
@@ -732,9 +736,11 @@ main section .category3 {
     margin: 0 auto;
 
 }
-main section .category3 .category3_contents {}
+main section .category3 .category3_contents {
+    width: 100%;
+}
 main section .category3 .category3_contents .product {
-    width: 100%; height:100vh;
+    width: 100%; height:90vh;
     
 }
 main section .category3 .category3_contents .product h2 {
@@ -777,26 +783,26 @@ main section .category3 .category3_contents .product #product_slide .swiper-wrap
     
 }
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide1 img {
-    width:900px; height:600px;
+    width:50%; height:50%;
     background-position: center;
     background-size: cover;
     
 }
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide2 {}
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide2 img{
-    width:600px; height:600px;
+    width:30%; height:50%;
     background-position: center;
     background-size: cover;
 }
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide3 {}
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide3 img {
-    width:1100px; height:600px;
+    width:50%; height:50%;
     background-position: center;
     background-size: cover;
 }
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide4 {}
 main section .category3 .category3_contents .product #product_slide .swiper-wrapper .slide4 img {
-    width:1100px; height:600px;
+    width:50%; height:50%;
     margin-bottom: 50px;
     background-position: center;
     background-size: cover;

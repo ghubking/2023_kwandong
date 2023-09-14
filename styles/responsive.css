@@ -15,7 +15,90 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li {
     padding-top: 10px;
     transition: all 0.5s;
 }
-
+main section .main_page #video01 {width:100%; height:auto;}
+main section .main_page #video02 {width:100%; height:auto;}
+main section .main_page {
+    height:100%;
+}
+main section .main_page .main_text {
+    width:100%;
+    position: absolute; top:30%;
+    text-align: center;
+    z-index: 100;
+    overflow: hidden;
+}
+main section .main_page .scroll {
+    width:100%;
+    position: absolute; bottom:30%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+main section .main_page .play_wrap {
+    width:100%;
+    position: absolute; 
+    bottom:35%;
+    z-index: 100;
+}
+main section .category1 .category1_contents .text .text1 em {
+    margin: 400px 0 25px 25px;
+    font-size: 1.99rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text1 span {
+    font-size: 1rem;
+}
+main section .category1 .category1_contents .text .text1 img {
+    width: 30px; height: 30px;
+}
+main section .category1 .category1_contents .text .text2 em {
+    margin: 400px 0 25px 25px;
+    font-size: 1.99rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    
+}
+main section .category1 .category1_contents .text .text2 span {
+    font-size: 1rem;
+}
+main section .category1 .category1_contents .text .text2 img {
+    width: 30px; height: 30px;
+}
+main section .category1 .category1_contents .text .text3 em {
+    margin: 400px 0 25px 25px;
+    font-size: 1.99rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    
+}
+main section .category1 .category1_contents .text .text3 span {
+    font-size: 1rem;
+}
+main section .category1 .category1_contents .text .text3 img {
+    width: 30px; height: 30px;
+}
+main section .category1 .category1_contents .text .text4 em {
+    margin: 400px 0 25px 25px;
+    font-size: 1.99rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+    
+}
+main section .category1 .category1_contents .text .text4 span {
+    font-size: 1rem;
+}
+main section .category1 .category1_contents .text .text4 img {
+    width: 30px; height: 30px;
+}
 }
 /* 1504px end */
 
@@ -53,11 +136,213 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a {
     display: block; color:#FFF;
     transition: all 0.5s;
 }
+main section .main_page {
+    height:100%;
+}
+main section .main_page #video01 {
+    width:100%; height:auto;
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+main section .main_page #video02 {width:100%; height:auto;}
+main section .main_page .main_text {
+    width:100%;
+    position: absolute; top:20%;
+    text-align: center;
+    z-index: 100;
+    overflow: hidden;
+}
+main section .main_page .main_text h2 {
+    font-size: 1.99rem;
+    font-weight: 600; color:#fff;
+    letter-spacing: -0.02rem;
+    overflow: hidden;
+}
+main section .main_page .main_text p {
+    font-size: 1rem;
+}
+main section .main_page .scroll {
+    width:100%;
+    position: absolute; bottom:55%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+main section .main_page .scroll img {
+    width: 20px; height:20px;
+}
+main section .main_page .play_wrap {
+    width:100%;
+    position: absolute; 
+    bottom:57%;
+    z-index: 100;
+}
+main section .main_page .play_wrap ul {
+    
+    margin-right: 30px;
 
 }
-/* 1032 end */
-
+main section .main_page .play_wrap ul li .play_bar01 .bar {
+    width: 100px;
+    border: 3px solid#fff;
+    display: block;
+    margin-top: 10px;
+}
+main section .main_page .play_wrap ul li .play_bar02 .bar {
+    width: 100px;
+    border: 3px solid#fff;
+    display: block;
+    margin-top: 10px;
+}
+main section .category1 h2 {
+    font-size: 2.82rem;
+}
+main section .category1 .category1_contents .text .text1 em {
+    margin: 400px 0 20px 20px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text1 span {
+    font-size: 0.9rem;
+}
+main section .category1 .category1_contents .text .text2 em {
+    margin: 400px 0 20px 20px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text2 span {
+    font-size: 0.9rem;
+}
+main section .category1 .category1_contents .text .text3 em {
+    margin: 400px 0 20px 20px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text3 span {
+    font-size: 0.9rem;
+}
+main section .category1 .category1_contents .text .text4 em {
+    margin: 400px 0 20px 20px;
+    font-size: 1.41rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    color: #fff;
+}
+main section .category1 .category1_contents .text .text4 span {
+    font-size: 0.9rem;
+}
+main section .category2 {
+    width:clac(100% - 30px);
+}
+main section .category2 h2 {
+    font-size: 2.82rem;
+}
+main section .category2 .category2_contents {
+    
+}
+main section .category2 .category2_contents .contents01 {
+    width:calc(50% - 15px); height:30vh;
+    margin-right: 10px;
+}
+main section .category2 .category2_contents .contents01 span {
+    font-size: 1.99rem;
+    padding: 200px 0 0 30px;
+}
+main section .category2 .category2_contents .contents02 {
+    width:calc(50% - 15px); height:30vh;
+    
+}
+main section .category2 .category2_contents .contents02 span {
+    font-size: 1.99rem;
+    padding: 200px 0 0 30px;
+}
+main section .category2 .category2_contents .contents03 {
+    width:calc(50% - 15px); height:30vh;
+    margin-right: 10px;
+}
+main section .category2 .category2_contents .contents03 span {
+    font-size: 1.99rem;
+    padding: 200px 0 0 30px;
+}
+main section .category2 .category2_contents .contents04 {
+    width:calc(50% - 15px); height:30vh;
+    margin-right: 0px;
+}
+main section .category2 .category2_contents .contents04 span {
+    font-size: 1.99rem;
+    padding: 200px 0 0 30px;
+}
+main section .category3 .category3_contents .product h2 {
+    font-size: 1.99rem;
+}
+main section .category3 .category3_contents .product {
+    width: 100%; height:70vh;
+    
+}
+}
+/* 1100 end */
+html {min-width: 470px;}
 @media screen and (max-width:725px){
+    header .header_wrap h1 {
+        margin: 10px 0 10px 10px;
+    }
+    header .header_wrap h1 a {}
+    header .header_wrap h1 a img {width: 75%;}
+    header .header_wrap .nav #nav_btn {
+        width: 25px; height:25px;
+    }
+    header .header_wrap .nav .menu_line01 {
+        width: 10px;
+        text-align: center;
+        margin-left: 0.6px;
+    }
+    header .header_wrap .nav .menu_line02 {
+        display: block;
+        width: 10px;
+        border: 1px solid#fff;
+        margin-top: 5px;
+        text-align: center;
+        margin-left: 0.6px;
+    }
+    header .header_wrap .language {
+        margin-right: 15px;
+    }
+    header .header_wrap .language label img {
+        margin-left: 15px;
+    }
+    header .header_wrap .language #check_btn:checked ~ .menubars {
+        display: block;
+        position: absolute;
+        width: 40px;
+        background-color: #fd790d;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 30px;
+        border-radius: 10px;
+        transition: all 1s;
+    }
+    header .header_wrap .language .menubars li {
+        margin-top: 1px;
+        margin-bottom: 5px;
+        transition: all 1s;
+    }
+    header .header_wrap .language label img {
+        width: 20px; height:20px;
+    }
+    header .header_wrap .language label img:last-child {
+        margin-top: 0px;
+    }
     header .header_wrap .nav #sub {
         background: url(../images/bg_sub.jpg) no-repeat center;
         background-size: cover;
@@ -182,5 +467,241 @@ header .header_wrap .nav #sub .sub_contents2 ul .sub_contents_title2 ul li a {
     header .header_wrap .nav #sub .sub_recruit a span img {
         margin-left: 12px;
     }
+    main section .main_page #video01 {width:100%; height:auto;}
+    main section .main_page #video02 {width:100%; height:auto;}
+    main section .main_page .main_text {
+        width:100%;
+        position: absolute; top:15%;
+        text-align: center;
+    }
+    main section .main_page .main_text h2 {
+        font-size: 1.41rem;
+        font-weight: 500; color:#fff;
+        letter-spacing: -0.02rem;
+    }
+    main section .main_page .main_text p {
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+    main section .main_page .scroll {
+        width:100%;
+        position: absolute; top:9%;
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        overflow: hidden;
+    }
+    main section .main_page .scroll span {
+        margin-bottom: 15px;
+        font-size: 0.7rem;
+    }
+    main section .main_page .scroll img {
+        width: 10px; height:10px;
+    }
+    main section .main_page .play_wrap {
+        width:100%;
+        position: absolute; 
+        bottom:75%;
+        z-index: 100;
+    }
+    main section .main_page .play_wrap ul {
+        
+        margin-right: 5px;
     
+    }
+    main section .main_page .play_wrap ul li .play img {
+        width: 15px; height:15px;
+    }
+    main section .main_page .play_wrap ul li .pause img {
+        width: 15px; height:15px;
+    }
+    main section .main_page .play_wrap ul li .play_bar02 span {
+        font-size: 0.7rem;
+    }
+    main section .main_page .play_wrap ul li .play_bar01 span {
+        font-size: 0.70rem;
+    }
+    main section .main_page .play_wrap ul li .play_bar01 .bar {
+        width: 60px;
+        border: 2px solid#fff;
+        display: block;
+        margin-top: 5px;
+    }
+    main section .main_page .play_wrap ul li .play_bar02 .bar {
+        width: 60px;
+        border: 2px solid#fff;
+        display: block;
+        margin-top: 5px;
+    }
+    
+    main section .category1 {
+        width:calc(100% - 30px);
+    }
+    main section .category1 h2 {
+        font-size: 1.99rem;
+        margin: 50px 0 30px 0;
+    }
+    main section .category1 .category1_contents .text {
+    
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    main section .category1 .category1_contents .text .text1 {
+
+        width: 50%; height: 35vh;
+        overflow: hidden;
+    }
+    main section .category1 .category1_contents .text .text1:hover {
+        overflow: hidden;
+        transform: scale(1.1);
+        transform-origin: bottom center;
+        transition: transform 0.6s;
+        width: 50%;
+    }
+    main section .category1 .category1_contents .text .text1 em {
+        margin: 230px 0 10px 15px;
+        font-size: 1.41rem;
+        font-weight: 700;
+        letter-spacing: -0.02rem;
+        color: #fff;
+        
+    }
+    main section .category1 .category1_contents .text .text1 span {
+        margin: 0px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text1 img {
+        margin-left: 15px;
+        
+    }
+    main section .category1 .category1_contents .text .text2 {
+
+        width: 50%; height: 35vh;
+        overflow: hidden;
+    }
+    main section .category1 .category1_contents .text .text2:hover {
+        overflow: hidden;
+        transform: scale(1.1);
+        transform-origin: bottom center;
+        transition: transform 0.6s;
+        width: 50%;
+    }
+    main section .category1 .category1_contents .text .text2 em {
+        margin: 230px 0 10px 15px;
+        font-size: 1.41rem;
+        font-weight: 700;
+        letter-spacing: -0.02rem;
+        color: #fff;
+        
+    }
+    main section .category1 .category1_contents .text .text2 span {
+        margin: 0px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text2 img {
+        margin-left: 15px;
+        
+    }
+    main section .category1 .category1_contents .text .text3 {
+
+        width: 50%; height: 35vh;
+        overflow: hidden;
+    }
+    main section .category1 .category1_contents .text .text3:hover {
+        overflow: hidden;
+        transform: scale(1.1);
+        transform-origin: bottom center;
+        transition: transform 0.6s;
+        width: 50%;
+    }
+    main section .category1 .category1_contents .text .text3 em {
+        margin: 230px 0 10px 15px;
+        font-size: 1.41rem;
+        font-weight: 700;
+        letter-spacing: -0.02rem;
+        color: #fff;
+        
+    }
+    main section .category1 .category1_contents .text .text3 span {
+        margin: 0px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text3 img {
+        margin-left: 15px;
+        
+    }
+    main section .category1 .category1_contents .text .text4 {
+
+        width: 50%; height: 35vh;
+        overflow: hidden;
+    }
+    main section .category1 .category1_contents .text .text4:hover {
+        overflow: hidden;
+        transform: scale(1.1);
+        transform-origin: bottom center;
+        transition: transform 0.6s;
+        width: 50%;
+    }
+    main section .category1 .category1_contents .text .text4 em {
+        margin: 230px 0 10px 15px;
+        font-size: 1.41rem;
+        font-weight: 700;
+        letter-spacing: -0.02rem;
+        color: #fff;
+        
+    }
+    main section .category1 .category1_contents .text .text4 span {
+        margin: 0px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text4 img {
+        margin-left: 15px;
+    }
+    main section .category2 h2 {
+        font-size: 1.99rem;
+    }
+    main section .category2 .category2_contents .contents01 {
+        width:calc(100% - 30px); height:20vh;
+        margin-right: 0;
+}
+    main section .category2 .category2_contents .contents01 span {
+    font-size: 1.99rem;
+    padding: 120px 0 0 20px;
+}
+    main section .category2 .category2_contents .contents02 {
+        width:calc(100% - 30px); height:20vh;
+        margin-right: 0; margin-top: 10px;
+}
+    main section .category2 .category2_contents .contents02 span {
+    font-size: 1.99rem;
+    padding: 120px 0 0 20px;
+}
+    main section .category2 .category2_contents .contents03 {
+        width:calc(100% - 30px); height:20vh;
+        margin-right: 0; margin-top: 10px;
+}
+    main section .category2 .category2_contents .contents03 span {
+    font-size: 1.99rem;
+    padding: 120px 0 0 20px;
+}
+    main section .category2 .category2_contents .contents04 {
+        width:calc(100% - 30px); height:20vh;
+        margin-right: 0; margin-top: 10px;
+}
+    main section .category2 .category2_contents .contents04 span {
+    font-size: 1.99rem;
+    padding: 120px 0 0 20px;
+}
+main section .category3 .category3_contents .product h2 {
+    font-size: 1.41rem;
+}
+main section .category3 .category3_contents .product span {
+    font-size: 1rem;
+}
+main section .category3 .category3_contents .product {
+    width: 100%; height:50vh;
+    
+}
 }
