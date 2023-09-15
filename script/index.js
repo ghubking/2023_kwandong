@@ -99,10 +99,10 @@ const nav_btn = document.querySelector('#nav_btn')
         
         // 스크롤 내리면 snb 고정메뉴 불러오기
         const snb = document.querySelector('.snb')
-        
-        console.log(snb)
+        const category1 = document.querySelector('.category1')
+        console.log(snb, category1)
         window.addEventListener("scroll", () => {
-            if (window.scrollY > '900') {   // 스크롤Y 위치 값
+            if (window.scrollY > '500') {   // 스크롤Y 위치 값
             snb.setAttribute("style", "display: flex");
         } else {
             snb.setAttribute("style", "display: none;");

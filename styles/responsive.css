@@ -1,3 +1,4 @@
+html {min-width: 400px;}
 @media screen and (max-width:1504px){
     header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {
         margin: 60px 50px 90px 50px;
@@ -113,6 +114,9 @@ main section .category4 .notice .notice_contents ul li a span {
 }
 main section .category4 .event .event_contents ul li a img {
     height:18vh;
+}
+main section .category5 .ir .price .sub_price ul li em {
+    width: 40%; 
 }
 }
 /* 1504px end */
@@ -330,9 +334,66 @@ main section .category4 .notice .notice_contents ul li a .notice_line {
 main section .category4 .event .event_contents ul li a img {
     height:14vh;
 }
+main section .category5 .ir h3 {
+    margin-left: 20px;
+}
+
+main section .category5 .ir .price .ir_price p {
+    width:85%; height:80px;
+    font-size: 1.99rem; margin-left: 20px;
+}
+main section .category5 .ir .price .ir_price .minus {
+    width: 85%; height:30px;
+    font-size: 1.41rem; margin-left: 20px;
+}
+main section .category5 .ir .price .sub_price {
+    width: 48%; margin-right: 20px;
+    
+}
+main section .category5 .ir .price .sub_price ul li span {
+    font-size: 0.9rem;
+}
+main section .category5 .ir .price .sub_price ul li em {
+    width: 50%; font-size: 0.8rem;
+    text-align: end;
+    padding-right: 10px;
+}
+main section .category5 .ir .ir_navi {
+    margin-left: 20px;
+}
+main section .category5 .recruit h3 {
+    margin-left: 20px;
+}
+main section .category5 .recruit p {
+    font-size: 1.41rem; margin-left: 20px;
+} 
+main section .category5 .recruit span {
+    font-size: 1.41rem; margin-left: 20px;
+}
+main section .category5 .recruit .ir_navi {
+    margin: 70px 0 0 5px;
+}
+main section .category5 .recruit .ir_navi a span {
+    font-size: 1rem;
+}
+footer .fnb ul {
+    padding: 50px 0 50px 30px;
+}
+footer .fnb ul li {
+    margin-right: 20px;
+}
+footer .fnb .under_line {
+    width: calc(100% - 60px);
+}
+footer .footer_btm address {
+    margin-left: 30px;
+}
+footer .footer_btm .relation {
+    margin-right: 30px;
+}
 }
 /* 1100 end */
-html {min-width: 470px;}
+
 @media screen and (max-width:725px){
     header .header_wrap h1 {
         margin: 10px 0 10px 10px;
@@ -805,4 +866,126 @@ main section .category4 .event {
     padding: 40px 25px 0 15px;
     margin-right: 20px; margin-top: 30px;
 }
+main section .category5 {
+    width:calc(100% - 30px);
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+main section .category5 .ir {
+    width:100%; height:50vh;
+}
+main section .category5 .ir h3 {
+    font-size: 1.99rem; font-weight: 700;
+    color:#fff;
+    margin: 30px 0 100px 20px;
+}
+main section .category5 .ir .price .ir_price {
+    
+}
+main section .category5 .recruit {
+    width:100%; height:50vh;
+    margin-top: 10px;
+}
+main section .category5 .recruit h3 {
+    font-size: 1.99rem; font-weight: 700;
+    color:#fff;
+    margin: 30px 0 100px 20px;
+}
+main section .category5 .recruit p {
+    font-size: 1.2rem;
+}
+main section .category5 .recruit span {
+    font-size: 1.2rem;
+}
+main section .category5 .recruit .ir_navi {
+    margin: 150px 0 0 5px;
+}
+main section .category1 .snb ul li {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding:5px 5px;
+    
+    
+}
+main section .category1 .snb ul li a > img {
+    width: 40%;
+}
+main section .category1 .snb ul li .up_btn img {
+    width: 50%;
+}
+main section .category1 .snb ul li .down_btn img {
+    width: 50%;
+}
+main section .category1 .snb ul li a span {
+    font-size: 0.5rem;
+    display: none;
+}
+
+footer .fnb ul {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: space-between;
+    margin-right: 15px;
+    padding: 20px 0 20px 10px;
+}
+
+footer .fnb ul li {
+    margin-right: 2px;
+}
+footer .fnb ul li a span {
+    font-size: 0.75rem;
+}
+footer .fnb ul li a h2 {
+    margin-right: 0;
+}
+footer .fnb ul li a h2 img {
+    width: 75%;
+}
+footer .fnb .under_line {
+    width: calc(100% - 30px);
+}
+footer .footer_btm {
+    
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer .footer_btm address span {
+    font-size: 0.5rem;
+}
+footer .footer_btm address p {
+    font-size: 0.5rem;
+}
+footer .footer_btm address {
+    color:#fff; letter-spacing: -0.02rem;
+    margin: 25px 10px 25px 15px; line-height: 20px;
+}
+footer .footer_btm .relation {
+    margin: 25px 15px 25px 15px;
+}
+footer .footer_btm .relation ul .sns .sns_btn {
+    font-size: 0.75rem;
+}
+footer .footer_btm .relation ul .family .family_btn {
+    font-size: 0.75rem;
+}
+}
+/* 725 end */
+
+@media screen and (max-width:400px){
+    main section .main_page .main_text {
+        width:100%;
+        position: absolute; top:10%;
+        text-align: center;
+    }
+    main section .main_page .scroll {
+        position: absolute; top:1%;
+    }
+    main section .main_page .play_wrap {
+        bottom:77%;
+    }
+    footer .fnb > ul > li > a > span {
+        font-size: 0.5rem;
+        margin-left: 0;
+    }
 }
