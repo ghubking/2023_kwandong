@@ -5,7 +5,7 @@ const nav_btn = document.querySelector('#nav_btn')
         const header = document.querySelector('header')
         const headerHeight = header.getBoundingClientRect().height;
         console.log(nav_btn, sub, close, header)
-        
+        // 서브메뉴 위에서 내려오는 효과
         sub.style.transform = 'translateY(-100%)'
         sub.style.transtion = 'transform 1s ease'
         nav_btn.addEventListener('click',function(){
@@ -15,6 +15,7 @@ const nav_btn = document.querySelector('#nav_btn')
             e.preventDefault();
             sub.style.transform = 'translateY(-100%)'
         })
+        // 헤더메뉴 마우스 스크롤시 블랙적용
         window.addEventListener("scroll", () => {
             if (window.scrollY > headerHeight) {
             header.setAttribute("style", "background: #000;");
@@ -32,6 +33,7 @@ const nav_btn = document.querySelector('#nav_btn')
         const play_bar02 = document.querySelector('.play_bar02')
         
         console.log(video01, video02, play, pause, play_bar01, play_bar02)
+        // 비디오 플레이 포즈
         play.style.display = 'none'
         pause.addEventListener('click',function(){
             play.style.display = 'flex'
@@ -66,13 +68,31 @@ const nav_btn = document.querySelector('#nav_btn')
         const active = document.querySelectorAll('.active')
         console.log(sns_wrap, family_wrap, sns, family, sns_btn, active)
         // sns_wrap.style.display = 'none'
-        sns_btn.addEventListener('click',function(){
-            sns_wrap.classList.toggle('active')
-        })
-        family_btn.addEventListener('click',function(){
-            family_wrap.classList.toggle('active')
-        })
-        
+        // sns_btn.addEventListener('click',function(){
+        //     sns_wrap.classList.toggle('active')
+        // })
+        // family_btn.addEventListener('click',function(){
+        //     family_wrap.classList.toggle('active')
+        // })
+        $(document).ready(function() {
+            $('.family_btn').click(function() {
+            $('.family_wrap').slideToggle(500);
+            });
+        });
+        $(document).ready(function() {
+            $('.sns_btn').click(function() {
+            $('.sns_wrap').slideToggle(100);
+            });
+        });
+        $(document).ready(function() {
+            $('#check_btn').click(function() {
+            $('.menubars').slideToggle(400);
+            });
+        });
+
+
+
+
         // 모바일 서브메뉴 토글
         const btn = document.querySelectorAll('.sub_contents_title')
         const list = document.querySelectorAll('.text_list')

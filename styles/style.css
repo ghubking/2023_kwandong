@@ -25,6 +25,7 @@ header .header_wrap .nav {
 }
 header .header_wrap .nav #nav_btn {
     width: 50px; height:50px;
+    
     border: 2px solid#fff;
     border-radius: 50%;
     display: flex;
@@ -69,6 +70,7 @@ header .header_wrap .nav #sub {
     transform: translateY(-100%);
     transition: 0.5s all;
     overflow-y: auto;
+    z-index: 310;
 }
 
 header .header_wrap .nav #sub .sub_top {
@@ -226,15 +228,29 @@ header .header_wrap .nav #sub .sub_recruit a span img:last-child {}
 
 header .header_wrap .language {
     margin-right: 50px;
+    position: relative;
 }
-header .header_wrap .language #check_btn {display: none;}
-header .header_wrap .language #check_btn
-header .header_wrap .language #check_btn .label {}
+header .header_wrap .language #check_btn {
+    display: none;
+    
+}
 
-header .header_wrap .language #check_btn .label {display: block;}
+header .header_wrap .language label {
+    display: block; cursor: pointer;
+    
+}
 header .header_wrap .language #check_btn .label img {}
-header .header_wrap .language .menubars {display: none;} 
-header .header_wrap .language #check_btn:checked ~ .menubars {
+header .header_wrap .language .menubars {
+    display: none;
+    position: absolute; top: 130%; right: 1%;
+    width: 80px;
+    background-color: #fd790d;
+    text-align: center;
+    /* margin-top: 5px; */
+    margin-left: 20px;
+    border-radius: 10px;
+} 
+/* header .header_wrap .language #check_btn:checked ~ .menubars {
     display: block;
     position: absolute;
     width: 80px;
@@ -243,8 +259,8 @@ header .header_wrap .language #check_btn:checked ~ .menubars {
     margin-top: 5px;
     margin-left: 20px;
     border-radius: 10px;
-    transition: all 1s;
-}
+    
+} */
 header .header_wrap .language label img {
     margin-left: 25px;
 }
@@ -262,13 +278,13 @@ header .header_wrap .language .menubars {}
 header .header_wrap .language .menubars li {
     margin-top: 5px;
     margin-bottom: 10px;
-    transition: all 1s;
+    
 }
 
 header .header_wrap .language .menubars li a {
     font-size: 0.71rem;
     color: #fff;
-    transition: all 1s;
+    
 }
 header .header_wrap .language .menubars li a:hover {
     color:#000
@@ -1052,7 +1068,8 @@ main section .category5 .ir .price .sub_price ul li span {
 main section .category5 .ir .price .sub_price ul li em {
     width: 30%; background-color: #000;
     margin-bottom: 10px; font-weight: 700;
-    padding: 13px 0 13px 10px;
+    padding: 13px 0 13px 0px;
+    text-align: center;
     color: #fff;
 }
 main section .category5 .ir .ir_navi {
@@ -1185,12 +1202,13 @@ footer .footer_btm .relation ul {
 }
 footer .footer_btm .relation ul .sns {
     margin-right: 50px;
-    
+    position: relative;
 }
 footer .footer_btm .relation ul .sns .sns_btn {
     color:#fff;
     margin-bottom: 10px;
     display: block;
+    cursor: pointer;
 }
 
 footer .footer_btm .relation ul .sns .sns_btn img {
@@ -1203,22 +1221,29 @@ footer .footer_btm .relation ul .sns .txt_line {
 footer .footer_btm .relation ul .sns .sns_wrap.active { 
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
+    
+    position: absolute; right: auto; bottom: 150%;
 }
 footer .footer_btm .relation ul .sns .sns_wrap {
-    /* display: flex; flex-flow: row nowrap;
-    justify-content: space-between; */
     display: none;
-    position: relative;
-    bottom:70px; 
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    position: absolute; right: auto; bottom: 150%;
+    /* position: relative; */
+    /* bottom:70px; 
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; */
+    
+    
 }
 footer .footer_btm .relation ul .sns .sns_wrap li {
-    margin-right: 5px;
+    margin-right: 10px;
     
 }
 footer .footer_btm .relation ul .sns .sns_wrap li a {
     
     text-align: center;
-    transition: all is;
+    transition: all 1s;
     
     
 }
@@ -1232,12 +1257,13 @@ footer .footer_btm .relation ul .sns .sns_wrap li a:hover img {
 
 
 footer .footer_btm .relation ul .family {
-
+    position: relative;
 }
 footer .footer_btm .relation ul .family .family_btn {
     color:#fff;
     margin-bottom: 10px;
     display: block;
+    cursor: pointer;
 }
 footer .footer_btm .relation ul .family .family_btn img {
     margin-left: 30px;
@@ -1250,16 +1276,21 @@ footer .footer_btm .relation ul .family .txt_line {
 footer .footer_btm .relation ul .family .family_wrap.active {
     display: flex; flex-flow: column wrap;
     justify-content: flex-start;
-    background-color: #fd790d;
-    position: relative;
-    bottom:190px;
+    background-color: #fd790d; width: 130px;
+    position: absolute; right: auto; bottom: 150%;
+    /* bottom:190px; */
     border-radius: 10px;
+    transition: all 1s;
 }
 footer .footer_btm .relation ul .family .family_wrap {
     display: flex; flex-flow: column wrap;
     justify-content: flex-start;
-    display:none;
+    display:none; 
     
+    background-color: #fd790d; width: 130px;
+    position: absolute; right: auto; bottom: 150%;
+    /* bottom:190px; */
+    border-radius: 10px;
 }
 footer .footer_btm .relation ul .family .family_wrap li:last-child {
     padding-bottom: 10px;

@@ -1,4 +1,4 @@
-html {min-width: 400px;}
+html {min-width: 360px;}
 @media screen and (max-width:1504px){
     header .header_wrap .nav #sub .sub_contents ul .sub_contents_title {
         margin: 60px 50px 90px 50px;
@@ -391,6 +391,12 @@ footer .footer_btm address {
 footer .footer_btm .relation {
     margin-right: 30px;
 }
+footer .footer_btm .relation ul .sns .sns_btn img {
+    margin-left: 20px; 
+}
+footer .footer_btm .relation ul .family .family_btn img {
+    margin-left: 20px; 
+}
 }
 /* 1100 end */
 
@@ -422,7 +428,7 @@ footer .footer_btm .relation {
     header .header_wrap .language label img {
         margin-left: 15px;
     }
-    header .header_wrap .language #check_btn:checked ~ .menubars {
+    /* header .header_wrap .language #check_btn:checked ~ .menubars {
         display: block;
         position: absolute;
         width: 40px;
@@ -432,7 +438,7 @@ footer .footer_btm .relation {
         margin-left: 30px;
         border-radius: 10px;
         transition: all 1s;
-    }
+    } */
     header .header_wrap .language .menubars li {
         margin-top: 1px;
         margin-bottom: 5px;
@@ -987,5 +993,67 @@ footer .footer_btm .relation ul .family .family_btn {
     footer .fnb > ul > li > a > span {
         font-size: 0.5rem;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width:360px){
+    header .header_wrap h1 a img {width: 50%;}
+    main section .main_page .scroll {
+        top:-4%;
+    }
+    header .header_wrap .nav {
+        padding-right: 50px;
+    }
+    main section .main_page .play_wrap {
+        top:19%; right: -10%;
+    }
+    main section .main_page .main_text {
+        text-align: center;
+    }
+    main section .category1 .category1_contents .text .text1 em {
+        margin: 150px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text2 em {
+        margin: 150px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text3 em {
+        margin: 150px 0 10px 15px;
+    }
+    main section .category1 .category1_contents .text .text4 em {
+        margin: 150px 0 10px 15px;
+    }
+    main section .category2 .category2_contents .contents01 span {
+        font-size: 1.41rem;
+        
+    }
+    main section .category2 .category2_contents .contents02 span {
+        font-size: 1.41rem;
+        
+    }
+    main section .category2 .category2_contents .contents03 span {
+        font-size: 1.41rem;
+        
+    }
+    main section .category2 .category2_contents .contents04 span {
+        font-size: 1.41rem;
+        
+    }
+    main section .category4 {
+        height: 180vh;
+    }
+    main section .category4 .notice {
+        height: 80vh;
+    }
+    main section .category4 .event {
+        height: 80vh;
+    }
+    main section .category4 .notice .notice_contents ul li a {
+        height:15vh;
+    }
+    main section .category5 .ir {
+    height:60vh;
+    }
+    main section .category5 .recruit {
+    height:60vh;
     }
 }
