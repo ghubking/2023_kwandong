@@ -81,12 +81,13 @@ const nav_btn = document.querySelector('#nav_btn')
         });
         $(document).ready(function() {
             $('.sns_btn').click(function() {
-            $('.sns_wrap').slideToggle(100);
+            $('.sns_wrap').slideToggle(500)
             });
-        });
+            });
+            
         $(document).ready(function() {
             $('#check_btn').click(function() {
-            $('.menubars').slideToggle(400);
+            $('.menubars').slideToggle(500);
             });
         });
 

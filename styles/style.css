@@ -283,11 +283,13 @@ header .header_wrap .language .menubars li {
 
 header .header_wrap .language .menubars li a {
     font-size: 0.71rem;
-    color: #fff;
-    
+    color: #fff; 
+    transition: all 0.5s;
 }
 header .header_wrap .language .menubars li a:hover {
-    color:#000
+    color:#000;
+    font-weight: 700;
+    transition: all 0.5s;
 }
 
 /* main-page */
@@ -1225,10 +1227,14 @@ footer .footer_btm .relation ul .sns .sns_wrap.active {
     position: absolute; right: auto; bottom: 150%;
 }
 footer .footer_btm .relation ul .sns .sns_wrap {
-    display: none;
-    display: flex; flex-flow: row nowrap;
+    display: flex; 
+    flex-flow: row nowrap;
     justify-content: space-between;
     position: absolute; right: auto; bottom: 150%;
+    background-color: #fd790d; width: 130px;
+    border-radius: 10px;
+    display: none;
+    
     /* position: relative; */
     /* bottom:70px; 
     display: flex; flex-flow: row nowrap;
@@ -1238,17 +1244,27 @@ footer .footer_btm .relation ul .sns .sns_wrap {
 }
 footer .footer_btm .relation ul .sns .sns_wrap li {
     margin-right: 10px;
+    padding-top: 5px; ;
+    display: flex; justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
     
+}
+footer .footer_btm .relation ul .sns .sns_wrap li a:hover {
+    color:#000;
+    transition: all 0.5s;
+}
+footer .footer_btm .relation ul .sns .sns_wrap li a span {
+    font-size: 0.75rem; font-weight: 600;
 }
 footer .footer_btm .relation ul .sns .sns_wrap li a {
-    
-    text-align: center;
-    transition: all 1s;
-    
-    
+    color:#fff; font-size: 0.75rem; font-weight: 600;
+    padding-left: 15px; 
+    transition: all 0.5s; 
+    display: flex; align-items: center;
 }
 footer .footer_btm .relation ul .sns .sns_wrap li a img {
-    transition: all 0.5s;
+    transition: all 0.5s; margin-right: 10px;
 }
 footer .footer_btm .relation ul .sns .sns_wrap li a:hover img {
     transform: scale(1.2);
@@ -1280,14 +1296,14 @@ footer .footer_btm .relation ul .family .family_wrap.active {
     position: absolute; right: auto; bottom: 150%;
     /* bottom:190px; */
     border-radius: 10px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 footer .footer_btm .relation ul .family .family_wrap {
     display: flex; flex-flow: column wrap;
     justify-content: flex-start;
     display:none; 
     
-    background-color: #fd790d; width: 130px;
+    background-color: #fd790d; width: 110px;
     position: absolute; right: auto; bottom: 150%;
     /* bottom:190px; */
     border-radius: 10px;
@@ -1304,11 +1320,11 @@ footer .footer_btm .relation ul .family .family_wrap li {
 }
 footer .footer_btm .relation ul .family .family_wrap li a:hover {
     color:#000;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 footer .footer_btm .relation ul .family .family_wrap li a {
     color:#fff; font-size: 0.75rem; font-weight: 600;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 
