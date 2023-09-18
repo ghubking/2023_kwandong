@@ -401,11 +401,17 @@ footer .footer_btm .relation ul .family .family_btn img {
 /* 1100 end */
 
 @media screen and (max-width:725px){
+    
+    
     header .header_wrap h1 {
-        margin: 10px 0 10px 10px;
+        margin: 25px 0 25px 10px;
+    
+        display: inline;
     }
     header .header_wrap h1 a {}
-    header .header_wrap h1 a img {width: 50%;}
+    header .header_wrap h1 a img {
+        max-width: 75px;
+    }
     header .header_wrap .nav #nav_btn {
         width: 25px; height:25px;
         
@@ -547,14 +553,11 @@ footer .footer_btm .relation ul .family .family_btn img {
     header .header_wrap .nav #sub .sub_recruit {
         width: 250px; height: 50px;
         position: relative;
-        
         margin: 0 auto;
-        
         background-color: #fd790d;
         margin-top: 50px;
         margin-bottom: 50px;
         border-radius: 20px;
-        
     }
     header .header_wrap .nav #sub .sub_recruit a:hover span {
         color:#000;
@@ -614,6 +617,7 @@ footer .footer_btm .relation ul .family .family_btn img {
         position: absolute; 
         bottom:75%;
         z-index: 100;
+        
     }
     main section .main_page .play_wrap ul {
         
@@ -932,23 +936,26 @@ main section .category1 .snb ul li a span {
 footer .fnb ul {
     display: flex; flex-flow: row nowrap;
     align-items: center; justify-content: space-around;
-    margin-right: 15px;
+    margin-right: 10px;
     padding: 20px 0 20px 10px;
 }
 
 footer .fnb > ul > li {
-    margin-right: 2px;
+    margin-right: 0px;
 }
-
+footer .fnb ul li a {}
 footer .fnb ul li a span {
     font-size: 0.75rem;
 }
 footer .fnb ul li a h2 {
+    
     margin-right: 0;
     display: inline;
 }
 footer .fnb ul li a h2 img {
-    width: 75%;
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
 }
 footer .fnb .under_line {
     width: calc(100% - 30px);
@@ -993,17 +1000,32 @@ footer .footer_btm .relation ul .family .family_btn {
     main section .main_page .play_wrap {
         bottom:77%;
     }
+    footer .fnb ul {
+        display: flex; flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: start;
+        
+    }
+    footer .fnb ul li {
+        margin: 0px 0 5px 100px;
+        
+    }
+    footer .fnb ul li a h2:hover img {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
     footer .fnb ul li a h2 img {
-        width: 50%;
+        width: 75%;
     }
     footer .fnb > ul > li > a > span {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 400; text-align: center;
         margin-left: 0;
     }
 }
 
 @media screen and (max-width:360px){
-    header .header_wrap h1 a img {width: 50%;}
+    header .header_wrap h1 a img {width: 100%;}
     main section .main_page .scroll {
         top:-4%;
     }

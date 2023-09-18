@@ -20,7 +20,15 @@ header .header_wrap h1 {
     margin: 25px 0 25px 30px;
 }
 header .header_wrap h1 a {}
-header .header_wrap h1 a img {width: 100%;}
+header .header_wrap h1 a:hover img {
+    width: 100%;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+header .header_wrap h1 a img {
+    width: 100%;
+    transition: all 0.5s;
+}
 header .header_wrap .nav {
     
 }
@@ -1161,7 +1169,12 @@ footer .fnb ul li {
 }
 footer .fnb ul li a {}
 footer .fnb ul li a h2 {display: inline;}
-footer .fnb ul li a h2 img {}
+footer .fnb ul li a h2:hover img {
+    
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+footer .fnb ul li a h2 img {width: 100%; transition: all 0.5s;}
 footer .fnb ul li a span:hover {
     color:#fd790d;
     transition: all 1s;
