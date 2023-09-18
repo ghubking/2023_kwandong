@@ -14,6 +14,7 @@ header .header_wrap {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 header .header_wrap h1 {
     margin: 25px 0 25px 30px;
@@ -1159,7 +1160,7 @@ footer .fnb ul li {
 
 }
 footer .fnb ul li a {}
-footer .fnb ul li a h2 {}
+footer .fnb ul li a h2 {display: inline;}
 footer .fnb ul li a h2 img {}
 footer .fnb ul li a span:hover {
     color:#fd790d;

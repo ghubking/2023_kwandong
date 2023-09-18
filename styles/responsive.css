@@ -380,7 +380,7 @@ footer .fnb ul {
     padding: 50px 0 50px 30px;
 }
 footer .fnb ul li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 footer .fnb .under_line {
     width: calc(100% - 60px);
@@ -405,9 +405,10 @@ footer .footer_btm .relation ul .family .family_btn img {
         margin: 10px 0 10px 10px;
     }
     header .header_wrap h1 a {}
-    header .header_wrap h1 a img {width: 75%;}
+    header .header_wrap h1 a img {width: 50%;}
     header .header_wrap .nav #nav_btn {
         width: 25px; height:25px;
+        
     }
     header .header_wrap .nav .menu_line01 {
         width: 10px;
@@ -930,19 +931,21 @@ main section .category1 .snb ul li a span {
 
 footer .fnb ul {
     display: flex; flex-flow: row nowrap;
-    align-items: center; justify-content: space-between;
+    align-items: center; justify-content: space-around;
     margin-right: 15px;
     padding: 20px 0 20px 10px;
 }
 
-footer .fnb ul li {
+footer .fnb > ul > li {
     margin-right: 2px;
 }
+
 footer .fnb ul li a span {
     font-size: 0.75rem;
 }
 footer .fnb ul li a h2 {
     margin-right: 0;
+    display: inline;
 }
 footer .fnb ul li a h2 img {
     width: 75%;
@@ -989,6 +992,9 @@ footer .footer_btm .relation ul .family .family_btn {
     }
     main section .main_page .play_wrap {
         bottom:77%;
+    }
+    footer .fnb ul li a h2 img {
+        width: 50%;
     }
     footer .fnb > ul > li > a > span {
         font-size: 0.5rem;
