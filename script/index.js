@@ -204,3 +204,9 @@ const startCountersOnScroll = () => {
 	// 		$("ul",this).slideToggle("fast");
 	// 	});
 	// });
+
+
+    // a태그 눌렀을때 맨위로 가는거 막는 제이쿼리
+    $("a").click(function(e){
+        e.preventDefault();
+    });
