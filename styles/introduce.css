@@ -1,0 +1,191 @@
+main {}
+main section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* history */
+main section .history {
+    width:100%; height:560px;
+    background: url(../images/bg_company02.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+main section .history p {
+    margin: 115px 0 0 160px;
+    
+}
+main section .history p a {
+    color:#fff; font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+main section .history h1 {
+    font-size: 2.82rem;
+    color:#fff; font-weight: 600;
+    margin: 10px 0 10px 160px;
+    letter-spacing: -0.02rem;
+}
+main section .history span {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main section .history em {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main section .history .title_wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 48px 25px 160px;
+    
+}
+main section .history .title_wrap a:first-child:hover {
+    background: url(../images/bg_smalldrug3.jpg) no-repeat center;
+    color:#fd790d;
+    transition: all 0.5s;
+}
+main section .history .title_wrap a:nth-child(2):hover {
+    background: url(../images/bg_smallrelationcompany.jpg) no-repeat center;
+    color:#fd790d;
+    transition: all 0.5s;
+}
+main section .history .title_wrap a:last-child:hover {
+    background: url(../images/bg_smallfactory.jpg) no-repeat center;
+    color:#fd790d;
+    transition: all 0.5s;
+}
+main section .history .title_wrap a {
+    margin-right: 50px;
+    width: 500px; border: 1px solid#fff;
+    padding:50px 50px 50px 50px;
+    font-size: 1.41rem; font-weight: 700;
+    color:#fff; text-align: center;
+    letter-spacing: -0.02rem;
+    transition: all 0.5s;
+}
+main section .pr_video {
+    
+    position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;
+}
+main section .pr_video iframe, 
+main section .pr_video object,
+main section .pr_video embed {
+    margin: 0 auto;
+    margin-top: 60px;
+    position:absolute; top:0; left:12.5%; width:75%; height:75%;
+}
+
+    
+
+
+main section .history_contents {}
+main section .history_contents .year {}
+main section .history_contents .year .y2020 {}
+main section .history_contents .year .y2020 .y2020_top{}
+main section .history_contents .year .y2020 .y2020_top span {}
+main section .history_contents .year .y2020 .graph {}
+main section .history_contents .year .y2020 .graph span {}
+main section .history_contents .year .y2010 {}
+main section .history_contents .year .y2010 .y2010_top {}
+main section .history_contents .year .y2010 .y2010_top span {}
+main section .history_contents .year .y2010 .graph {}
+main section .history_contents .year .y2010 .graph span {}
+main section .history_contents .year .y2000 {}
+main section .history_contents .year .y2000 .y2000_top {}
+main section .history_contents .year .y2000 .y2000_top span {}
+main section .history_contents .year .y2000 .graph {}
+main section .history_contents .year .y2000 .graph span {}
+main section .history_contents .year .y1990 {}
+main section .history_contents .year .y1990 .y1990_top {}
+main section .history_contents .year .y1990 .y1990_top span {}
+main section .history_contents .year .y1990 .graph {}
+main section .history_contents .year .y1990 .graph span {}
+main section .history_contents .year .y1980 {}
+main section .history_contents .year .y1980 .y1980_top {}
+main section .history_contents .year .y1980 .y1980_top span {}
+main section .history_contents .year .y1980 .graph {}
+main section .history_contents .year .y1980 .graph span {}
+main section .history_contents .history_text {}
+main section .history_contents .history_text .y2020_text {}
+main section .history_contents .history_text .y2020_text h2 {}
+main section .history_contents .history_text .y2020_text .year2 {}
+main section .history_contents .history_text .y2020_text .year2 span {}
+main section .history_contents .history_text .y2020_text .year2 .text_detail {}
+main section .history_contents .history_text .y2020_text .year2 .text_detail span {}
+main section .history_contents .history_text .y2010_text {}
+main section .history_contents .history_text .y2010_text h2 {}
+main section .history_contents .history_text .y2010_text .year2 {}
+main section .history_contents .history_text .y2010_text .year2 span {}
+main section .history_contents .history_text .y2010_text .year2 .text_detail {}
+main section .history_contents .history_text .y2010_text .year2 .text_detail span {}
+main section .history_contents .history_text .y2000_text {}
+main section .history_contents .history_text .y2000_text h2 {}
+main section .history_contents .history_text .y2000_text .year2 {}
+main section .history_contents .history_text .y2000_text .year2 span {}
+main section .history_contents .history_text .y2000_text .year2 .text_detail {}
+main section .history_contents .history_text .y2000_text .year2 .text_detail span {}
+main section .history_contents .history_text .y1990_text {}
+main section .history_contents .history_text .y1990_text h2 {}
+main section .history_contents .history_text .y1990_text .year2 {}
+main section .history_contents .history_text .y1990_text .year2 span {}
+main section .history_contents .history_text .y1990_text .year2 .text_detail {}
+main section .history_contents .history_text .y1990_text .year2 .text_detail span {}
+main section .history_contents .history_text .y1980_text {}
+main section .history_contents .history_text .y1980_text h2 {}
+main section .history_contents .history_text .y1980_text .year2 {}
+main section .history_contents .history_text .y1980_text .year2 span {}
+main section .history_contents .history_text .y1980_text .year2 .text_detail {}
+main section .history_contents .history_text .y1980_text .year2 .text_detail span {}
+
+
+/* relation_company */
+main {}
+main section {}
+main section .relation_company {}
+main section .relation_company p {}
+main section .relation_company p a {}
+main section .relation_company h1 {}
+main section .relation_company span {}
+main section .relation_company em {}
+main section .relation_company .relation_wrap {}
+main section .relation_company .relation_wrap a {}
+main section .relation_company .relation_contents {}
+main section .relation_company .relation_contents .contents {}
+main section .relation_company .relation_contents .contents img {}
+main section .relation_company .relation_contents .contents .contents_top {}
+main section .relation_company .relation_contents .contents .contents_top .top_left {}
+main section .relation_company .relation_contents .contents .contents_top .top_left h2 {}
+main section .relation_company .relation_contents .contents .contents_top .top_left em {}
+main section .relation_company .relation_contents .contents .contents_top .top_right {}
+main section .relation_company .relation_contents .contents .contents_top .top_right a {}
+main section .relation_company .relation_contents .contents .contents_top .top_right a span {}
+main section .relation_company .relation_contents .contents .contents_top .top_right a img {}
+main section .relation_company .relation_contents .contents .contents_text {}
+main section .relation_company .relation_contents .contents .contents_text span {}
+main section .relation_company .relation_contents .contents .contents_text p {}
+
+
+/* location */
+main section .location {}
+main section .location p {}
+main section .location p a {}
+main section .location h1 {}
+main section .location span {}
+main section .location em {}
+main section .location .location_wrap {}
+main section .location .location_wrap a {}
+main section .location .location_contents {}
+main section .location .location_contents ul {}
+main section .location .location_contents ul li {}
+main section .location .location_contents ul li img {}
+main section .location .location_contents ul li p {}
+main section .location .location_contents ul li span {}
+main section .location .location_contents ul li .map {}
+main section .location .location_contents ul li .map img {}
+main section .location .location_contents ul li .map span {}
