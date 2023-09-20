@@ -81,111 +81,602 @@ main section .pr_video embed {
     position:absolute; top:0; left:12.5%; width:75%; height:75%;
 }
 
+
+
+main section .history_contents {
+    width: calc(100% - 340px);
+    margin: 0 auto;
+}
+main section .history_contents .year {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main section .history_contents .year .y2020 {
+    width: 20%;
+    margin-right: 10px;
+}
+main section .history_contents .year .y2020 .y2020_top{
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main section .history_contents .year .y2020 .y2020_top span:first-child {
     
-
-
-main section .history_contents {}
-main section .history_contents .year {}
-main section .history_contents .year .y2020 {}
-main section .history_contents .year .y2020 .y2020_top{}
-main section .history_contents .year .y2020 .y2020_top span {}
-main section .history_contents .year .y2020 .graph {}
-main section .history_contents .year .y2020 .graph span {}
-main section .history_contents .year .y2010 {}
-main section .history_contents .year .y2010 .y2010_top {}
-main section .history_contents .year .y2010 .y2010_top span {}
-main section .history_contents .year .y2010 .graph {}
-main section .history_contents .year .y2010 .graph span {}
-main section .history_contents .year .y2000 {}
-main section .history_contents .year .y2000 .y2000_top {}
-main section .history_contents .year .y2000 .y2000_top span {}
-main section .history_contents .year .y2000 .graph {}
-main section .history_contents .year .y2000 .graph span {}
-main section .history_contents .year .y1990 {}
-main section .history_contents .year .y1990 .y1990_top {}
-main section .history_contents .year .y1990 .y1990_top span {}
-main section .history_contents .year .y1990 .graph {}
-main section .history_contents .year .y1990 .graph span {}
-main section .history_contents .year .y1980 {}
-main section .history_contents .year .y1980 .y1980_top {}
-main section .history_contents .year .y1980 .y1980_top span {}
-main section .history_contents .year .y1980 .graph {}
-main section .history_contents .year .y1980 .graph span {}
+}
+main section .history_contents .year .y2020 .y2020_top span {
+    font-weight: 700;
+}
+main section .history_contents .year .y2020 .graph {
+    margin-top: 10px;
+    cursor: pointer;
+}
+main section .history_contents .year .y2020 .graph span {
+    display: block;
+    width: 100%; height: 30px;
+    background: #d9d9d9;
+}
+main section .history_contents .year .y2020 .graph .active {
+    display: block;
+    width: 100%; height: 30px;
+    background: #EE3212;
+}
+main section .history_contents .year .y2010 {
+    width: 20%;
+    margin-right: 10px;
+    
+}
+main section .history_contents .year .y2010 .y2010_top {
+    text-align: right;
+}
+main section .history_contents .year .y2010 .y2010_top span {
+    
+    font-weight: 700;
+}
+main section .history_contents .year .y2010 .graph {
+    margin-top: 10px;
+    cursor: pointer;
+}
+main section .history_contents .year .y2010 .graph span {
+    display: block;
+    width: 100%; height: 30px;
+    background: #d9d9d9;
+}
+main section .history_contents .year .y2010 .graph .active {
+    display: block;
+    width: 100%; height: 30px;
+    background: #EE3212;
+}
+main section .history_contents .year .y2000 {
+    width: 20%;
+    margin-right: 10px;
+    
+}
+main section .history_contents .year .y2000 .y2000_top {
+    text-align: right;
+}
+main section .history_contents .year .y2000 .y2000_top span {
+    font-weight: 700;
+}
+main section .history_contents .year .y2000 .graph {
+    margin-top: 10px;
+    cursor: pointer;
+}
+main section .history_contents .year .y2000 .graph span {
+    display: block;
+    width: 100%; height: 30px;
+    background: #d9d9d9;
+}
+main section .history_contents .year .y2000 .graph .active {
+    display: block;
+    width: 100%; height: 30px;
+    background: #EE3212;
+}
+main section .history_contents .year .y1990 {
+    width: 20%;
+    margin-right: 10px;
+    
+}
+main section .history_contents .year .y1990 .y1990_top {
+    text-align: right;
+}
+main section .history_contents .year .y1990 .y1990_top span {
+    font-weight: 700;
+}
+main section .history_contents .year .y1990 .graph {
+    margin-top: 10px;
+    cursor: pointer;
+}
+main section .history_contents .year .y1990 .graph span {
+    display: block;
+    width: 100%; height: 30px;
+    background: #d9d9d9;
+}
+main section .history_contents .year .y1990 .graph .active {
+    display: block;
+    width: 100%; height: 30px;
+    background: #EE3212;
+}
+main section .history_contents .year .y1980_before {
+    width: 20%;
+}
+main section .history_contents .year .y1980_before .y1980_top {
+    text-align: right;
+}
+main section .history_contents .year .y1980_before .y1980_top span {
+    font-weight: 700;
+}
+main section .history_contents .year .y1980_before .graph {
+    margin-top: 10px;
+    cursor: pointer;
+}
+main section .history_contents .year .y1980_before .graph .active {
+    display: block;
+    width: 100%; height: 30px;
+    background: #EE3212;
+}
+main section .history_contents .year .y1980_before .graph span {
+    display: block;
+    width: 100%; height: 30px;
+    background: #d9d9d9;
+}
 main section .history_contents .history_text {}
-main section .history_contents .history_text .y2020_text {}
-main section .history_contents .history_text .y2020_text h2 {}
-main section .history_contents .history_text .y2020_text .year2 {}
-main section .history_contents .history_text .y2020_text .year2 span {}
-main section .history_contents .history_text .y2020_text .year2 .text_detail {}
-main section .history_contents .history_text .y2020_text .year2 .text_detail span {}
-main section .history_contents .history_text .y2010_text {}
-main section .history_contents .history_text .y2010_text h2 {}
-main section .history_contents .history_text .y2010_text .year2 {}
-main section .history_contents .history_text .y2010_text .year2 span {}
-main section .history_contents .history_text .y2010_text .year2 .text_detail {}
-main section .history_contents .history_text .y2010_text .year2 .text_detail span {}
-main section .history_contents .history_text .y2000_text {}
-main section .history_contents .history_text .y2000_text h2 {}
-main section .history_contents .history_text .y2000_text .year2 {}
-main section .history_contents .history_text .y2000_text .year2 span {}
-main section .history_contents .history_text .y2000_text .year2 .text_detail {}
-main section .history_contents .history_text .y2000_text .year2 .text_detail span {}
-main section .history_contents .history_text .y1990_text {}
-main section .history_contents .history_text .y1990_text h2 {}
-main section .history_contents .history_text .y1990_text .year2 {}
-main section .history_contents .history_text .y1990_text .year2 span {}
-main section .history_contents .history_text .y1990_text .year2 .text_detail {}
-main section .history_contents .history_text .y1990_text .year2 .text_detail span {}
-main section .history_contents .history_text .y1980_text {}
-main section .history_contents .history_text .y1980_text h2 {}
-main section .history_contents .history_text .y1980_text .year2 {}
-main section .history_contents .history_text .y1980_text .year2 span {}
-main section .history_contents .history_text .y1980_text .year2 .text_detail {}
-main section .history_contents .history_text .y1980_text .year2 .text_detail span {}
+main section .history_contents .history_text .y2020_text {
+    
+}
+main section .history_contents .history_text .y2020_text h2 {
+    font-size: 4rem; font-weight: 700;
+    margin: 30px 0 50px 0;
+    color:#25A8D9;
+}
+main section .history_contents .history_text .y2020_text div {
+    display: flex;
+    flex-flow: row wrap;
+}
+main section .history_contents .history_text .y2020_text .year2 {
+    width: 50%; 
+    display: flex; flex-flow: row nowrap;
+    
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d9d9d9;
+}
+main section .history_contents .history_text .y2020_text .year2 > span {
+    font-size: 1.41rem; font-weight: 700;
+    margin-right: 20px; padding-top: 5px;
+}
+main section .history_contents .history_text .y2020_text .year2 .text_detail {
+    display: flex; flex-flow: column wrap;
+}
+main section .history_contents .history_text .y2020_text .year2 .text_detail span {
+    letter-spacing: -0.02rem;
+    line-height: 30px;
+}
+main section .history_contents .history_text .y2010_text {
+    width: 100%;
+    display:none;
+}
+main section .history_contents .history_text .y2010_text h2 {
+    font-size: 4rem; font-weight: 700;
+    margin: 30px 0 50px 0;
+    color:#25A8D9;
+}
+main section .history_contents .history_text .y2010_text div {
+    display: flex;
+    flex-flow: row wrap;
+}
+main section .history_contents .history_text .y2010_text .year2 {
+    width: 50%; 
+    display: flex; flex-flow: row nowrap;
+    
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d9d9d9;
+}
+main section .history_contents .history_text .y2010_text .year2 > span {
+    font-size: 1.41rem; font-weight: 700;
+    margin-right: 20px; padding-top: 5px;
+}
+main section .history_contents .history_text .y2010_text .year2 .text_detail {
+    display: flex; flex-flow: column wrap;
+}
+main section .history_contents .history_text .y2010_text .year2 .text_detail span {
+    letter-spacing: -0.02rem;
+    line-height: 30px;
+}
+main section .history_contents .history_text .y2000_text {
+    width: 100%;
+    display:none;
+}
+main section .history_contents .history_text .y2000_text h2 {
+    font-size: 4rem; font-weight: 700;
+    margin: 30px 0 50px 0;
+    color:#25A8D9;
+}
+main section .history_contents .history_text .y2000_text div {
+    display: flex;
+    flex-flow: row wrap;
+}
+main section .history_contents .history_text .y2000_text .year2 {
+    width: 50%; 
+    display: flex; flex-flow: row nowrap;
+    
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d9d9d9;
+}
+main section .history_contents .history_text .y2000_text .year2 > span {
+    font-size: 1.41rem; font-weight: 700;
+    margin-right: 20px; padding-top: 5px;
+}
+main section .history_contents .history_text .y2000_text .year2 .text_detail {
+    display: flex; flex-flow: column wrap;
+}
+main section .history_contents .history_text .y2000_text .year2 .text_detail span {
+    letter-spacing: -0.02rem;
+    line-height: 30px;
+}
+main section .history_contents .history_text .y1990_text {
+    width: 100%;
+    display:none;
+}
+main section .history_contents .history_text .y1990_text h2 {
+    font-size: 4rem; font-weight: 700;
+    margin: 30px 0 50px 0;
+    color:#25A8D9;
+}
+main section .history_contents .history_text .y1990_text div {
+    display: flex;
+    flex-flow: row wrap;
+}
+main section .history_contents .history_text .y1990_text .year2 {
+    width: 50%; 
+    display: flex; flex-flow: row nowrap;
+    
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d9d9d9;
+}
+main section .history_contents .history_text .y1990_text .year2 > span {
+    font-size: 1.41rem; font-weight: 700;
+    margin-right: 20px; padding-top: 5px;
+}
+main section .history_contents .history_text .y1990_text .year2 .text_detail {
+    display: flex; flex-flow: column wrap;
+}
+main section .history_contents .history_text .y1990_text .year2 .text_detail span {
+    letter-spacing: -0.02rem;
+    line-height: 30px;
+}
+main section .history_contents .history_text .y1980_text {
+    width: 100%;
+    display:none;
+}
+main section .history_contents .history_text .y1980_text h2 {
+    font-size: 4rem; font-weight: 700;
+    margin: 30px 0 50px 0;
+    color:#25A8D9;
+}
+main section .history_contents .history_text .y1980_text div {
+    display: flex;
+    flex-flow: row wrap;
+}
+main section .history_contents .history_text .y1980_text .year2 {
+    width: 50%; 
+    display: flex; flex-flow: row nowrap;
+    
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d9d9d9;
+}
+main section .history_contents .history_text .y1980_text .year2 > span {
+    font-size: 1.41rem; font-weight: 700;
+    margin-right: 20px; padding-top: 5px;
+}
+main section .history_contents .history_text .y1980_text .year2 .text_detail {
+    display: flex; flex-flow: column wrap;
+}
+main section .history_contents .history_text .y1980_text .year2 .text_detail span {
+    letter-spacing: -0.02rem;
+    line-height: 30px;
+}
 
 
 /* relation_company */
 main {}
-main section {}
-main section .relation_company {}
-main section .relation_company p {}
-main section .relation_company p a {}
-main section .relation_company h1 {}
-main section .relation_company span {}
-main section .relation_company em {}
-main section .relation_company .relation_wrap {}
-main section .relation_company .relation_wrap a {}
-main section .relation_company .relation_contents {}
-main section .relation_company .relation_contents .contents {}
-main section .relation_company .relation_contents .contents img {}
-main section .relation_company .relation_contents .contents .contents_top {}
-main section .relation_company .relation_contents .contents .contents_top .top_left {}
-main section .relation_company .relation_contents .contents .contents_top .top_left h2 {}
-main section .relation_company .relation_contents .contents .contents_top .top_left em {}
-main section .relation_company .relation_contents .contents .contents_top .top_right {}
-main section .relation_company .relation_contents .contents .contents_top .top_right a {}
-main section .relation_company .relation_contents .contents .contents_top .top_right a span {}
-main section .relation_company .relation_contents .contents .contents_top .top_right a img {}
-main section .relation_company .relation_contents .contents .contents_text {}
-main section .relation_company .relation_contents .contents .contents_text span {}
-main section .relation_company .relation_contents .contents .contents_text p {}
+main .relation {
+    width:100%; 
+    margin: 0 auto;
+    display: none;
+}
+main .relation .relation_company {
+    width:100%; height:560px;
+    background: url(../images/bg_relationcompany.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+main .relation .relation_company p {
+    margin: 115px 0 0 160px;
+}
+main .relation .relation_company p a {
+    color:#fff; font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+main .relation .relation_company h1 {
+    font-size: 2.82rem;
+    color:#fff; font-weight: 600;
+    margin: 10px 0 10px 160px;
+    letter-spacing: -0.02rem;
+}
+main .relation .relation_company span {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main .relation .relation_company em {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main .relation .relation_company .relation_wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 48px 25px 160px;
+    overflow: hidden;
+}
+main .relation .relation_company .relation_wrap a {
+    margin-right: 50px;
+    width: 500px; border: 1px solid#fff;
+    padding:50px 50px 50px 50px;
+    font-size: 1.41rem; font-weight: 700;
+    color:#000; text-align: center;
+    letter-spacing: -0.02rem;
+    transition: all 0.5s;
+    background: #fff;
+}
+main .relation .relation_company .relation_wrap a:first-child:hover {
+    background: url(../images/bg_smalldrug3.jpg) no-repeat center;
+    color:#000;
+    transition: all 0.5s;
+}
+main .relation .relation_company .relation_wrap a:nth-child(2):hover {
+    background: url(../images/bg_smallrelationcompany.jpg) no-repeat center;
+    color:#000;
+    transition: all 0.5s;
+}
+main .relation .relation_company .relation_wrap a:last-child:hover {
+    background: url(../images/bg_smallfactory.jpg) no-repeat center;
+    color:#000;
+    transition: all 0.5s;
+}
+main .relation .relation_contents {
+    width: calc(100% - 520px);
+    margin: 0 auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+main .relation .relation_contents .contents {
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 55px 0 55px 0;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 30px;
+}
+main .relation .relation_contents .contents img {
+    width: calc(30% - 30px); height: 25vh;
+    margin-right: 30px;
+}
+main .relation .relation_contents .contents .contents_list {
+    width: calc(70% - 30px);
+    display: flex; flex-flow: column nowrap;
+    justify-content: flex-start;
+    
+}
+main .relation .relation_contents .contents .contents_list .contents_top {
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+main .relation .relation_contents .contents div .contents_top .top_left {
+    width: 75%;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+main .relation .relation_contents .contents div .contents_top .top_left h2 {
+    margin-right: 10px;
+    font-size: 1.99rem; font-weight: 600;
+    
+}
+main .relation .relation_contents .contents div .contents_top .top_left em {
+    font-size: 1.41rem;
+    
+}
+main .relation .relation_contents .contents div .contents_top .top_right {
+    width: 25%; margin: 0 auto;
+    
+}
+main .relation .relation_contents .contents div .contents_top .top_right a:hover span {
+}
+main .relation .relation_contents .contents div .contents_top .top_right a:hover {
+    background: #fd790d;
+    transition: all 0.5s;
+}
+main .relation .relation_contents .contents div .contents_top .top_right a {
+    
+    display: block;
+    width: 100%; height: 50px;
+    overflow: hidden;
+    background: #00578A;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    transition: all 0.5s;
+}
+main .relation .relation_contents .contents div .contents_top .top_right a span {
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+main .relation .relation_contents .contents div .contents_top .top_right a img {
+    width: 15px; height:15px;
+    align-items: center;
+}
+main .relation .relation_contents .contents div .contents_text {
+    width: 100%;
+}
+main .relation .relation_contents .contents div .contents_text span {
+    font-size: 1.41rem; font-weight: 700;
+    color:#00578A;
+    margin-top: 16px; margin-bottom: 20px;
+    display: block;
+}
+main .relation .relation_contents .contents div .contents_text p {
+    
+    letter-spacing: -0.02rem;
+    line-height: 25px;
+}
 
 
 /* location */
-main section .location {}
-main section .location p {}
-main section .location p a {}
-main section .location h1 {}
-main section .location span {}
-main section .location em {}
-main section .location .location_wrap {}
-main section .location .location_wrap a {}
-main section .location .location_contents {}
-main section .location .location_contents ul {}
-main section .location .location_contents ul li {}
-main section .location .location_contents ul li img {}
-main section .location .location_contents ul li p {}
-main section .location .location_contents ul li span {}
-main section .location .location_contents ul li .map {}
-main section .location .location_contents ul li .map img {}
-main section .location .location_contents ul li .map span {}
+main .category3 {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+main .category3 .location {
+    width:100%; height:560px;
+    background: url(../images/bg_factory.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+main .category3 .location p {
+    margin: 115px 0 0 160px;
+}
+main .category3 .location p a {
+    color:#fff; font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+main .category3 .location h1 {
+    font-size: 2.82rem;
+    color:#fff; font-weight: 600;
+    margin: 10px 0 10px 160px;
+    letter-spacing: -0.02rem;
+}
+main .category3 .location span {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem
+}
+main .category3 .location em {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main .category3 .location .location_wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 48px 25px 160px;
+    overflow: hidden;
+}
+main .category3 .location .location_wrap a {
+    margin-right: 50px;
+    width: 500px; border: 1px solid#fff;
+    padding:50px 50px 50px 50px;
+    font-size: 1.41rem; font-weight: 700;
+    color:#fff; text-align: center;
+    letter-spacing: -0.02rem;
+    transition: all 0.5s;
+    
+}
+main .category3 .location .location_wrap a:first-child:hover {
+    background: url(../images/bg_smalldrug3.jpg) no-repeat center;
+    color:#000;
+    transition: all 0.5s;
+}
+main .category3 .location .location_wrap a:nth-child(2):hover {
+    background: url(../images/bg_smallrelationcompany.jpg) no-repeat center;
+    color:#000;
+    transition: all 0.5s;
+}
+main .category3 .location .location_wrap a:last-child:hover {
+    background: url(../images/bg_smallfactory.jpg) no-repeat center;
+    color:#000;
+    transition: all 0.5s;
+}
+main .category3 .location_contents {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+main .category3 .location_contents ul {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .category3 .location_contents ul li {
+    width: 24%; height: 50vh;
+    margin: 0 auto;
+    border: 1px solid #d9d9d9;
+    padding: 50px 20px 20px 20px;
+    margin-bottom: 30px;
+}
+main .category3 .location_contents ul li > img {
+    width: 100%; height:200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+main .category3 .location_contents ul li p {
+    font-size: 1.41rem; font-weight: 600;
+    margin-bottom: 10px;
+}
+main .category3 .location_contents ul li span:nth-of-type(3) {
+    margin-top: 15px;
+}
+main .category3 .location_contents ul li span:nth-of-type(5) {
+    margin-top: 15px;
+}
+main .category3 .location_contents ul li span {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+main .category3 .location_contents ul > li > .map {
+    width: 100%;
+}
+main .category3 .location_contents ul > li > .map a:hover {
+    background: url(../images/map2.jpg) no-repeat center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+main .category3 .location_contents ul > li > .map a {
+    margin-top: 20px;
+    
+    border: 1px solid #d9d9d9;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s;
+    
+}
+main .category3 .location_contents ul > li > .map > a img {
+    width: 25px;
+    margin-right: 10px;
+    
+}
+main .category3 .location_contents ul > li > .map > a span {
+    padding-top: 10px;
+    
+}
