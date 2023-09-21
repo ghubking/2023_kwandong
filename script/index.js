@@ -25,37 +25,6 @@ const nav_btn = document.querySelector('#nav_btn')
     });
     
     
-        const video01 = document.querySelector('#video01')
-        const video02 = document.querySelector('#video02')
-        const play = document.querySelector('.play')
-        const pause = document.querySelector('.pause')
-        const play_bar01 = document.querySelector('.play_bar01')
-        const play_bar02 = document.querySelector('.play_bar02')
-        
-        console.log(video01, video02, play, pause, play_bar01, play_bar02)
-        // 비디오 플레이 포즈
-        play.style.display = 'none'
-        pause.addEventListener('click',function(){
-            play.style.display = 'flex'
-            pause.style.display = 'none'
-            video01.pause();
-            video02.pause();
-        })
-        play.addEventListener('click',function(){
-            pause.style.display = 'flex'
-            play.style.display = 'none'
-            video01.play();
-            video02.play();
-        })
-        video02.style.display = 'none';
-        play_bar01.addEventListener('click',function(){
-            video02.style.display = 'none';
-            video01.style.display = 'block';
-        })
-        play_bar02.addEventListener('click',function(){
-            video01.style.display = 'none';
-            video02.style.display = 'block'
-        })
 
 
         // sns, family 글상자 토글버튼 //
@@ -118,76 +87,7 @@ const nav_btn = document.querySelector('#nav_btn')
         // })
         // })
         
-        // 스크롤 내리면 snb 고정메뉴 불러오기
-        const snb = document.querySelector('.snb')
-        const category1 = document.querySelector('.category1')
-        console.log(snb, category1)
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > '500') {   // 스크롤Y 위치 값
-            snb.setAttribute("style", "display: flex");
-        } else {
-            snb.setAttribute("style", "display: none;");
-        }
-    });
-        const up_btn = document.querySelector('.up_btn')
-        const down_btn = document.querySelector('.down_btn')
-        console.log(up_btn, down_btn)
-        up_btn.addEventListener('click',function(e){
-            e.preventDefault();
-            window.scrollTo(0,0);
-        })
-        down_btn.addEventListener('click',function(e){
-            e.preventDefault();
-            window.scrollTo(0,document.body.scrollHeight);
-        })
-
-        // 숫자 애니메이션 //
         
-
-        const counter = (counterElement, max) => {
-            let now = max;
-        
-            const handle = setInterval(() => {
-                counterElement.innerHTML = Math.ceil(max - now).toLocaleString();
-        
-                if (now < 1) {
-                    clearInterval(handle);
-                }
-        
-                const step = now / 10;
-                now -= step;
-            }, 50);
-        };
-        
-        window.onload = () => {
-            const counters = document.querySelectorAll('.count-num');
-            const maxValues = [6250, 50, 1.7, 6250, 5135, 6520, 6020];
-        
-            counters.forEach((counterElement, index) => {
-                setTimeout(() => counter(counterElement, maxValues[index]), 0);
-            });
-        };
-        // 스크롤 이벤트
-const startCountersOnScroll = () => {
-    const category5 = document.querySelector('.category5');
-    const category5OffsetTop = category5.offsetTop;
-    let started = false;
-
-    const handleScroll = () => {
-        const scrollY = window.scrollY;
-        if (scrollY >= category5OffsetTop && !started) {
-            const counters = document.querySelectorAll('.count-num');
-            const maxValues = [6250, 50, 1.7, 6250, 5135, 6520, 6020];
-            counters.forEach((counterElement, index) => {
-                setTimeout(() => counter(counterElement, maxValues[index]), 0);
-            });
-            started = true;
-            window.removeEventListener('scroll', handleScroll);
-        }
-    };
-    window.addEventListener('scroll', handleScroll);
-};
-    window.addEventListener('load', startCountersOnScroll);
 
     
     // // 모바일 서브메뉴 토글 슬라이드
@@ -207,6 +107,6 @@ const startCountersOnScroll = () => {
 
 
     // a태그 눌렀을때 맨위로 가는거 막는 제이쿼리
-    $("a").click(function(e){
-        e.preventDefault();
-    });
+    // $("a").click(function(e){
+    //     e.preventDefault();
+    // });

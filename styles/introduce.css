@@ -98,7 +98,7 @@ main section .history_contents .year .y2020 {
     width: 20%;
     margin-right: 10px;
 }
-main section .history_contents .year .y2020 .y2020_top{
+main section .history_contents .year .y2020 .y2020_top {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
 }
@@ -454,7 +454,7 @@ main .relation .relation_company .relation_wrap a:last-child:hover {
     transition: all 0.5s;
 }
 main .relation .relation_contents {
-    width: calc(100% - 520px);
+    width: calc(100% - 320px);
     margin: 0 auto;
     margin-top: 75px;
     margin-bottom: 75px;
@@ -602,17 +602,17 @@ main .category3 .location .location_wrap a {
 }
 main .category3 .location .location_wrap a:first-child:hover {
     background: url(../images/bg_smalldrug3.jpg) no-repeat center;
-    color:#000;
+    color:#fd790d;
     transition: all 0.5s;
 }
 main .category3 .location .location_wrap a:nth-child(2):hover {
     background: url(../images/bg_smallrelationcompany.jpg) no-repeat center;
-    color:#000;
+    color:#fd790d;
     transition: all 0.5s;
 }
 main .category3 .location .location_wrap a:last-child:hover {
     background: url(../images/bg_smallfactory.jpg) no-repeat center;
-    color:#000;
+    color:#fd790d;
     transition: all 0.5s;
 }
 main .category3 .location_contents {
