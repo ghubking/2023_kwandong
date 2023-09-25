@@ -1,0 +1,181 @@
+
+html {min-width: 360px;}
+
+@media screen and (max-width:1600px){
+    main .category1 .event p {
+        margin: 115px 0 0 60px;
+    }
+    main .category1 .event h1 {
+        margin: 10px 0 10px 60px;
+    }
+    main .category1 .event span {
+        margin: 10px 0 10px 60px;
+    }
+    main .category1 .event em {
+        margin: 10px 0 10px 60px;
+    }
+    main .category1 .event .event_wrap {
+        margin-left: 60px;
+    }
+    main .category1 .event .event_wrap a {
+        padding:30px 30px 30px 30px;
+        margin-right: 30px;
+    }
+}
+/* 1600 end */
+
+
+@media screen and (max-width:1100px){
+    main .category1 .event_contents {
+        width:calc(100% - 200px);
+    }
+}
+
+/* 1100 end */
+
+@media screen and (max-width:1280px){
+    main .category1 .event_contents {
+        width:calc(100% - 100px);
+    }
+}
+/* 1280 end */
+
+@media screen and (max-width:960px){
+    main .category1 .event_contents_detail .text #text_list fieldset .first_line span {
+        font-size: 1rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .first_line #coupon_no {
+        width:235px; 
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .second_line span {
+        font-size: 1rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .second_line #user_name {
+        width:235px; 
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line span:first-child {
+        font-size: 1rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line #first {
+        width:65px;
+    }main .category1 .event_contents_detail .text #text_list fieldset .third_line #second_num {
+        width:65px;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line #third_num {
+        width:65px;
+    }
+}
+
+@media screen and (max-width:830px){
+    main .category1 .event_contents .contents_list {
+        width: 45%; height: 250px;
+    }
+}
+/* 830 end */
+
+@media screen and (max-width:760px){
+    main .category1 .event_contents {
+        width:calc(100% - 100px);
+    }
+    main .category1 .event_contents .contents_list {
+        width: 45%; height: 250px;
+    }
+    main .category1 .event_contents_detail {
+        width:calc(100% - 100px);
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line #first {
+        width:65px; 
+    }main .category1 .event_contents_detail .text #text_list fieldset .third_line #second_num {
+        width:65px; 
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line #third_num {
+        width:65px;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line > .line {
+        
+    }
+    main .category1 > a {
+        width:calc(100% - 100px);
+    }
+}
+
+/* 760 end */
+
+@media screen and (max-width:600px){
+    main .category1 .event {
+        width:100%; height:400px;
+    }
+    main .category1 .event p {
+        margin: 80px 0 0 30px;
+        font-size: 0.85rem;
+    }
+    main .category1 .event h1 {
+        margin: 10px 0 0px 30px;
+        font-size: 1.41rem;
+    }
+    main .category1 .event span {
+        margin: 0px 0 0px 30px;
+        font-size: 1rem;
+    }
+    main .category1 .event em {
+        margin: 0px 0 0px 30px;
+        font-size: 1rem;
+    }
+    main .category1 .event .event_wrap {
+        margin-left: 30px;
+    }
+    main .category1 .event .event_wrap a {
+        padding:20px 20px 20px 20px;
+        margin-right: 30px;
+        font-size: 1rem;
+    }
+    main .category1 .event .event_wrap a:first-child:hover {
+        background: url() no-repeat center;
+    }
+    main .category1 .event .event_wrap a:nth-child(2):hover {
+        background: url() no-repeat center;
+    }
+    main .category1 .event_contents .contents_list {
+        width: 100%; height: 250px;
+    }
+    main .category1 .event_contents_detail {
+        width:calc(100% - 30px);
+    }
+    
+    main .category1 .event_contents_detail .text #text_list fieldset .personal_info {
+        display: flex; flex-flow: column nowrap;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .personal_info label span {
+        font-size: 1rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .first_line span {
+        font-size: 1rem; width: 120px;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .first_line #coupon_no {
+        width: 190px; height: 30px; font-size: 0.85rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .second_line span {
+        font-size: 1rem; width: 120px;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .second_line #user_name {
+        width:190px; height: 30px; font-size: 0.85rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line span:first-child {
+        font-size: 1rem; width: 120px;
+    }
+
+
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line #first {
+        width: 50px; height: 30px; font-size: 0.85rem;
+    }main .category1 .event_contents_detail .text #text_list fieldset .third_line #second_num {
+        width:50px;  height: 30px; font-size: 0.85rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset .third_line #third_num {
+        width:50px;  height: 30px; font-size: 0.85rem;
+    }
+    main .category1 .event_contents_detail .text #text_list fieldset > a {
+        width: 200px;
+        padding: 15px 0 15px 0;
+    }
+}
+/* 600 end */

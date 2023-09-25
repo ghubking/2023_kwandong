@@ -1,43 +1,277 @@
-main .category1 {}
-main .category1 .event {}
-main .category1 .event p {}
-main .category1 .event p a {}
-main .category1 .event h1 {}
-main .category1 .event span {}
-main .category1 .event em {}
-main .category1 .event .event_wrap {}
-main .category1 .event .event_wrap {}
-main .category1 .event_contents {}
-main .category1 .event_contents .contents_list {}
-main .category1 .event_contents .contents_list img {}
-main .category1 .event_contents .contents_list p {}
-main .category1 .event_contents_detail {}
-main .category1 .event_contents_detail img {}
-main .category1 .event_contents_detail .text {}
+main .category1 {
+    width:100%; margin: 0 auto;
+}
+main .category1 .event {
+    width:100%; height:560px;
+    background: url(../images/bg_event.png) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+main .category1 .event p {
+    margin: 115px 0 0 160px;
+}
+main .category1 .event p a {
+    color:#fff; font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+main .category1 .event h1 {
+    font-size: 2.82rem;
+    color:#fff; font-weight: 600;
+    margin: 10px 0 10px 160px;
+    letter-spacing: -0.02rem;
+}
+main .category1 .event span {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main .category1 .event em {
+    font-size: 1.99rem;
+    color:#fff; font-weight: 600;
+    display: block; margin-left: 160px;
+    line-height: 45px; letter-spacing: -0.02rem;
+}
+main .category1 .event .event_wrap {
+    display: flex; flex-flow: row nowrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+main .category1 .event .event_wrap a {
+    
+    width: 750px; border: 3px solid#fff;
+    padding:60px 60px 60px 60px;
+    font-size: 1.41rem; font-weight: 700;
+    color:#fff; text-align: center;
+    letter-spacing: -0.02rem;
+    transition: all 0.5s;
+}
+main .category1 .event .event_wrap a:first-child:hover {
+    background: url(../images/small_events.jpg) no-repeat center;
+    color:#fd790d;
+    transition: all 0.5s;
+}
+main .category1 .event .event_wrap a:nth-child(2):hover {
+    background: url(../images/congra1.png) no-repeat center;
+    color:#fd790d;
+    transition: all 0.5s;
+}
+main .category1 .event_contents {
+    width:calc(100% - 550px);
+    margin: 0 auto;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 85px;
+    
+}
+main .category1 .event_contents .contents_list {
+    width: 30%; height: 250px;
+    background: no-repeat center;
+    background-size: cover;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+main .category1 .event_contents .contents_list a {
+    
+}
+main .category1 .event_contents .contents_list a:hover img {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+main .category1 .event_contents .contents_list a img {
+    width: 100%; height: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all 0.5s;
+}
+main .category1 .event_contents .contents_list a:hover p {
+    color: #fd790d;
+    transition: all 0.5s;
+}
+main .category1 .event_contents .contents_list a p {
+    height: 20%;
+    background: #000; color:#fff;
+    padding: 15px 0 0 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+main .category1 .event_contents_detail {
+    width:calc(100% - 320px);
+    margin: 0 auto;
+    display: none;
+    margin-top: 50px;
+}
+main .category1 .event_contents_detail > img {
+    width: 100%;
+}
+main .category1 .event_contents_detail .text {
+    background-color: #fff;
+    padding-top: 80px; padding-bottom: 45px;
+    width: 100%;
+}
 main .category1 .event_contents_detail .text #text_list {}
 main .category1 .event_contents_detail .text #text_list fieldset {}
-main .category1 .event_contents_detail .text #text_list fieldset .first_line {}
-main .category1 .event_contents_detail .text #text_list fieldset .first_line span {}
-main .category1 .event_contents_detail .text #text_list fieldset .first_line #coupon_no {}
-main .category1 .event_contents_detail .text #text_list fieldset .second_line {}
-main .category1 .event_contents_detail .text #text_list fieldset .second_line span {}
-main .category1 .event_contents_detail .text #text_list fieldset .second_line #user_name {}
-main .category1 .event_contents_detail .text #text_list fieldset .third_line {}
-main .category1 .event_contents_detail .text #text_list fieldset .third_line span {}
+main .category1 .event_contents_detail .text #text_list fieldset .first_line {
+    
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+main .category1 .event_contents_detail .text #text_list fieldset .first_line span {
+    width: 170px;
+    font-size: 1.41rem; color:#000;
+    font-weight: 700;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .first_line #coupon_no {
+    border: 1px solid #aaa ;
+    width:310px; height: 45px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .second_line {
+    
+    display: flex; flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .second_line span {
+    width: 170px;
+    font-size: 1.41rem; color:#000;
+    font-weight: 700;
+    
+    
+    
+}
+main .category1 .event_contents_detail .text #text_list fieldset .second_line #user_name {
+    width: 310px; height: 45px;
+    border: 1px solid #aaa ;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .third_line {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px 0 10px 0;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .third_line span:first-child {
+    width: 170px;
+    font-size: 1.41rem; color:#000;
+    font-weight: 700;
+    
+    
+}
 main .category1 .event_contents_detail .text #text_list fieldset .third_line label {}
-main .category1 .event_contents_detail .text #text_list fieldset .third_line #first {}
+main .category1 .event_contents_detail .text #text_list fieldset .third_line #first {
+    width: 90px; height: 45px;
+    text-align: center;
+    border: 1px solid #aaa ;
+
+}
 main .category1 .event_contents_detail .text #text_list fieldset .third_line #first option {}
-main .category1 .event_contents_detail .text #text_list fieldset .third_line .line {}
-main .category1 .event_contents_detail .text #text_list fieldset .third_line #second_num {}
-main .category1 .event_contents_detail .text #text_list fieldset .third_line #third_num {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info input {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info span {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info span a {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info span a em {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info span a img {}
-main .category1 .event_contents_detail .text #text_list fieldset .personal_info .line {}
-main .category1 .event_contents_detail .text #text_list fieldset #upload {}
-main .category1 a {}
-main .category1 a p {}
-main .category1 a p img {}
+main .category1 .event_contents_detail .text #text_list fieldset .third_line .line {
+    width: 10px; display: inline-block;
+    border: 0.5px solid#000;
+    padding-left: 0; margin-left: 5px; margin-right: 5px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .third_line #second_num {
+    width: 90px; height: 45px;
+    text-align: center;
+    border: 1px solid #aaa ;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .third_line #third_num {
+    width: 90px; height: 45px;
+    text-align: center;
+    border: 1px solid #aaa ;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info {
+    text-align: center;
+    padding-left: 85px;
+    margin-top: 20px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info label {
+    
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info label #checked {
+    appearance: none;
+    display: block;
+    padding-top: 15px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info label span {
+    background: url(../images/no_check.png) no-repeat;
+    font-size: 1.41rem;
+    padding-left: 30px;
+    display: block;
+    padding-bottom: 15px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info label input:checked+span {
+    background: url(../images/checked.png) no-repeat;
+    
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info a {
+    margin-left: 10px;
+    
+    display: inline-block;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info a em {
+    padding-bottom: 10px;
+}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info a img {}
+main .category1 .event_contents_detail .text #text_list fieldset .personal_info a .line {
+    display: block;
+    width: 100px;
+    border: 1px solid#000;
+    margin-top: 5px;
+    
+}
+main .category1 .event_contents_detail .text #text_list fieldset > a {
+    width: 300px;
+    
+    margin: 0 auto;
+    
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
+    transition: all 0.5s;
+}
+main .category1 .event_contents_detail .text #text_list fieldset > a:hover {
+    color: #fd790d; transform: scale(0.97);
+    transition: all 0.5s;
+}
+main .category1 .event_contents_detail .text #text_list fieldset > a span {
+    
+}
+main .category1 .event_contents_detail .list_btn:hover {
+    color:#fd790d;
+    transition: all 0.5s;
+}
+main .category1 .event_contents_detail .list_btn {
+    
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+    transition: all 0.5s;
+}
+main .category1 .event_contents_detail .list_btn a p {}
+main .category1 .event_contents_detail .list_btn a p img {margin-left: 10px;}
+
+

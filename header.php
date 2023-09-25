@@ -81,16 +81,16 @@
                                 </ul>
                             </li>
                             <li class="sub_contents_title2">
-                                <a href="#">홍보센터</a>
+                                <a href="./event.html">홍보센터</a>
                                 <ul>
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">이벤트</a></li>
-                                    <li><a href="#">영상 광고</a></li>
-                                    <li><a href="#">Radio 광고</a></li>
-                                    <li><a href="#">Print 광고</a></li>
-                                    <li><a href="#" >PR 동영상</a></li>
-                                    <li><a href="#">보조자료</a></li>
-                                    <li><a href="#">사이버 공장견학</a></li>
+                                    <li><a href="./event.html">공지사항</a></li>
+                                    <li><a href="./event.html">이벤트</a></li>
+                                    <li><a href="./event.html">영상 광고</a></li>
+                                    <li><a href="./event.html">Radio 광고</a></li>
+                                    <li><a href="./event.html">Print 광고</a></li>
+                                    <li><a href="./event.html" >PR 동영상</a></li>
+                                    <li><a href="./event.html">보조자료</a></li>
+                                    <li><a href="./event.html">사이버 공장견학</a></li>
                                 </ul>
                             </li>
                         </ul>
