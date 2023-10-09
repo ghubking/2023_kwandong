@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="광동제약">
+    <meta name="description" content="광동 60년, 최고를 향한 올바른 고집, 광동제약">
+    <title>::: 이벤트 | 홍보센터 | 광동제약 :::</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/event.css">
+    <link rel="stylesheet" href="./styles/event_respon.css">
+    
+    <!-- 파비콘 위치 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+   <!-- header -->
+   <?php include('./header.php') ?>
+<main>
+    <section class="category1">
+        <div class="event">  <!-- 배경이미지 삽입 -->
+            <p>
+                <a href="#">Home</a>
+                <a href="#">· 홍보센터</a>
+                <a href="#">· 이벤트</a>
+            </p>
+            <h1>회사연혁</h1>
+            <span>경품이 펑펑 쏟아지는</span>
+            <em>광동제약만의 특별한이벤트</em>
+            <div class="event_wrap">
+                <a href="./event.html" class="event_btn">진행중</a>
+                <a href="./event.html" class="event_person_btn">당첨자 발표</a>
+            </div>
+        </div>
+        <div class="event_contents">
+            <div class="contents_list">
+                <a href="#">
+                    <img src="./images/last_event_list1.jpg" alt="">
+                    <p>23.09.14(목) ~ 23.10.31(화)</p>
+                </a>
+            </div>
+            <div class="contents_list">
+                <a href="#">
+                    <img src="./images/last_event_list2.jpg" alt="">
+                    <p>23.09.14(목) ~ 23.10.31(화)</p>
+                </a>
+            </div>
+            <div class="contents_list">
+                <a href="#">
+                    <img src="./images/event1.png" alt="">
+                    <p>23.09.14(목) ~ 23.10.31(화)</p>
+                </a>
+            </div>
+            <div class="contents_list">
+                <a href="#">
+                    <img src="./images/event1.png" alt="">
+                    <p>23.09.14(목) ~ 23.10.31(화)</p>
+                </a>
+            </div>
+            <div class="contents_list">
+                <a href="#">
+                    <img src="./images/event2.gif" alt="">
+                    <p>23.09.14(목) ~ 23.10.31(화)</p>
+                </a>
+            </div>
+            <div class="contents_list">
+                <a href="#">
+                    <img src="./images/event3.png" alt="">
+                    <p>23.09.14(목) ~ 23.10.31(화)</p>
+                </a>
+            </div>
+        </div>
+        <div class="event_contents_detail">
+            <img src="./images/event_banner.jpg" alt="">
+            <div class="text">
+                <form action="#" method="get" id="text_list" name="coupon_info">
+                    <fieldset>
+                        <div class="first_line">
+                            <span>· 응모 쿠폰 번호:</span>
+                            <input type="text" id="coupon_no" placeholder="쿠폰번호를 입력해 주세요.">
+                        </div>
+                        <div class="second_line">
+                            <span>· 이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름:</span>
+                            <input type="text" id="user_name" placeholder="이름을 입력해 주세요.">
+                        </div>
+                        <div class="third_line">
+                            <span>· 연&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;락&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;처:</span>
+                            <label for="first"></label>
+                            <select name="first_num" id="first">
+                                <option value="010">010</option>
+                                <option value="0505">0505</option>
+                                <option value="02">02</option>
+                                <option value="032">032</option>
+                                <option value="042">042</option>
+                                <option value="052">052</option>
+                                <option value="062">062</option>
+                                <option value="061">061</option>
+                            </select>
+                            <span class="line"></span>
+                            <input type="text" id="second_num" placeholder="1234" maxlength="4">
+                            <span class="line"></span>
+                            <input type="text" id="third_num" placeholder="5678" maxlength="4">
+                        </div>
+                        <div class="personal_info">
+                            <label for="checked">
+                                <input type="checkbox" name="ok" id="checked">
+                                <span>개인정보 취급방침 동의</span>
+                            </label>
+                            <a href="#">
+                                <em>자세히 보기</em>
+                                <img src="./images/Exitpng.png" alt="">
+                                <span class="line"></span>
+                            </a>
+                        </div>
+                        <a href="#"><span>응모하기</span></a>
+                    </fieldset>
+                </form>
+            </div>
+            <a href="./event.html" class="list_btn"><p>이벤트 목록가기<img src="./images/small_arrow.png" alt=""></p></a>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<?php include('./footer.php') ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="./script/index.js"></script>
+<script>
+// <!-- 이벤트리스트 클릭 시 디테일화면 제이쿼리 -->
+$('.contents_list').on('click',function(){
+    $('.event_contents').hide();
+    $('.event_contents_detail').show();
+})
+
+</script>
+</body>
+</html>
